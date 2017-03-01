@@ -1,0 +1,5 @@
+So far, I have contributed to the mock up UI.
+
+I helped make the layout files and created some of the Intents in the java files.
+
+I also came up with some ideas for the project, such as the progress screen.
