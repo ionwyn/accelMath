@@ -1,0 +1,49 @@
+{
+  "edition": "Default",
+  "version": "1",
+  "units": [
+    {
+      "unitName": "MACM 101 - Discrete Math I",
+      "description": "MACM 101 introduces blahblahblah",
+      "chapters": [
+        {
+          "topic": "probability",
+          "questions": [
+            {
+              "question": "What is pi?",
+              "answer": "3.14"
+            }
+          ]
+        },
+        {
+          "topic": "some",
+          "questions": [
+            {
+              "question": "What is pi?",
+              "answer": "3.14"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unitName": "MATH 152 - Calculus II",
+      "description": "MATH 152 builds on top of MATH 150 and introduces students to integration and infinite series.",
+      "chapters": [
+        {
+          "topic": "something else",
+          "questions": [
+            {
+              "question": "What is pi?",
+              "answer": "3.14"
+            },
+            {
+              "question": "What is pi?",
+              "answer": "3.14"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

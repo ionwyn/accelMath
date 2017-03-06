@@ -1,0 +1,33 @@
+{
+  "edition": "Default",
+  "data": [
+    {
+      "unit": "stat-270",
+      "chapters": [
+        {
+          "topic": "probability",
+          "questions": [
+            {
+              "question": "What is pi?",
+              "answer": "3.14"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit": "math-150",
+      "chapters": [
+        {
+          "topic": "something else",
+          "questions": [
+            {
+              "question": "What is pi?",
+              "answer": "3.14"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
