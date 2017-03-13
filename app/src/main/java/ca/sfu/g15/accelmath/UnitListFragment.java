@@ -1,5 +1,6 @@
 package ca.sfu.g15.accelmath;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
@@ -49,6 +50,7 @@ public class UnitListFragment extends Fragment{
         private TextView mChapterCountTextView;
 
         private Database.Unit mUnit;
+        private int mUnitIndex;
 
         public UnitHolder(LayoutInflater inflater, ViewGroup parent) {
             super(inflater.inflate(R.layout.list_item_unit, parent, false));
@@ -57,15 +59,17 @@ public class UnitListFragment extends Fragment{
             mChapterCountTextView = (TextView) itemView.findViewById(R.id.unit_chapter_count);
         }
 
-        public void bind (Database.Unit unit) {
+        public void bind (Database.Unit unit, int unitIndex) {
             mUnit = unit;
+            mUnitIndex = unitIndex;
             mUnitNameTextView.setText(mUnit.unitName);
             mChapterCountTextView.setText(mUnit.chapters.size() + " chapters");
         }
 
         @Override
         public void onClick(View v) {
-
+            Intent intent = ChapterActivity.newIntent(getActivity(), mUnitIndex);
+            startActivity(intent);
         }
     }
 
@@ -87,7 +91,7 @@ public class UnitListFragment extends Fragment{
         @Override
         public void onBindViewHolder(UnitHolder holder, int position) {
             Database.Unit unit = mUnits.get(position);
-            holder.bind(unit);
+            holder.bind(unit, position);
         }
 
         @Override
