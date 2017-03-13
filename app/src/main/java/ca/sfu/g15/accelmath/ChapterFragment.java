@@ -1,5 +1,6 @@
 package ca.sfu.g15.accelmath;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -70,6 +71,7 @@ public class ChapterFragment extends Fragment{
         private RatingBar mChapterRatingBar;
 
         private Database.Unit.Chapter mChapter;
+        private int mChapterIndex;
 
         public ChapterHolder(LayoutInflater inflater, ViewGroup parent) {
             super(inflater.inflate(R.layout.list_item_chapter, parent, false));
@@ -79,15 +81,17 @@ public class ChapterFragment extends Fragment{
             mChapterRatingBar = (RatingBar) itemView.findViewById(R.id.chapter_stars);
         }
 
-        public void bind (Database.Unit.Chapter chapter) {
+        public void bind (Database.Unit.Chapter chapter, int chapterIndex) {
             mChapter = chapter;
+            mChapterIndex = chapterIndex;
             mChapterNameTextView.setText(chapter.topic);
             mChapterRatingBar.setNumStars(3);
         }
 
         @Override
         public void onClick(View v) {
-            //TODO
+            Intent intent = LessonActivity.newIntent(getActivity(), mUnitIndex, mChapterIndex);
+            startActivity(intent);
         }
     }
 
@@ -109,7 +113,7 @@ public class ChapterFragment extends Fragment{
         @Override
         public void onBindViewHolder(ChapterHolder holder, int position) {
             Database.Unit.Chapter chapter = mChapters.get(position);
-            holder.bind(chapter);
+            holder.bind(chapter, position);
         }
 
         @Override

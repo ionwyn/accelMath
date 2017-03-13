@@ -17,6 +17,7 @@
         </activity>
         <activity android:name=".UnitListActivity"></activity>
         <activity android:name=".ChapterActivity"></activity>
+        <activity android:name=".LessonActivity"></activity>
     </application>
 
 </manifest>

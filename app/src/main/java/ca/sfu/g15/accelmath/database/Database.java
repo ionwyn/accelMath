@@ -33,6 +33,9 @@ public class Database {
             public String topic;
 
             @JsonField
+            public String lesson;
+
+            @JsonField
             public List<Question> questions;
 
             @JsonObject

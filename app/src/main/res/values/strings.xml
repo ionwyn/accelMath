@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">AccelMath</string>
     <string name="play_button">Play!</string>
+    <string name="start_quiz">Start Quiz!</string>
 </resources>

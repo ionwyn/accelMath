@@ -4,10 +4,10 @@
   "units": [
     {
       "unitName": "MACM 101 - Discrete Math I",
-      "description": "MACM 101 introduces blahblahblah",
       "chapters": [
         {
-          "topic": "probability",
+          "topic": "Rule of Sum",
+          "lesson": "If there are \\(a \\) ways of doing something, and there are \\(b\\) ways of doing something else that does not occur when \\(a\\) is happening, then there are \\(a + b\\) ways.",
           "questions": [
             {
               "question": "What is pi?",
@@ -17,6 +17,7 @@
         },
         {
           "topic": "some",
+          "lesson": "",
           "questions": [
             {
               "question": "What is pi?",
@@ -28,10 +29,10 @@
     },
     {
       "unitName": "MATH 152 - Calculus II",
-      "description": "MATH 152 builds on top of MATH 150 and introduces students to integration and infinite series.",
       "chapters": [
         {
           "topic": "something else",
+          "lesson": "",
           "questions": [
             {
               "question": "What is pi?",

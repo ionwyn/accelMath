@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:auto="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_margin="16dp"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lesson_name_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Formula one: from xml with MathJax"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+
+            <io.github.kexanie.library.MathView
+                android:id="@+id/lesson_math_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                auto:engine="MathJax"
+                auto:text="When \\(a \\ne 0\\), there are two solutions to \\(ax^2 + bx + c = 0\\)
+        and they are $$x = {-b \\pm \\sqrt{b^2-4ac} \\over 2a}.$$"
+                >
+            </io.github.kexanie.library.MathView>
+            <Button
+                android:id="@+id/start_quiz_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/start_quiz"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
