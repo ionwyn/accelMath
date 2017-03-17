@@ -1,5 +1,6 @@
 package ca.sfu.g15.accelmath;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -66,6 +67,8 @@ public class LessonFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 //TODO
+                Intent intent = QuestionActivity.newIntent(getActivity(), mUnitIndex, mChapterIndex, new int[] {0}, 0);
+                startActivity(intent);
             }
         });
 
