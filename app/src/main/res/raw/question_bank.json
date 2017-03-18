@@ -17,10 +17,16 @@
         },
         {
           "topic": "some",
-          "lesson": "",
+          "lesson": "$$x = {-b \\pm \\sqrt{b^2-4ac} \\over 2a}.$$",
           "questions": [
             {
               "question": "What is pi?",
+              "options": [
+                "3.11",
+                "3.12",
+                "3.13",
+                "3.14"
+              ],
               "answer": "3.14"
             }
           ]

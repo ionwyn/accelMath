@@ -27,7 +27,9 @@ public class QuestionFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_question, container, false);
 
-        //mQuestionMathView = view.findViewById(R.id.)
+        mQuestionMathView = (MathView) view.findViewById(R.id.question_math_view);
+
+
 
         return view;
     }
