@@ -10,6 +10,8 @@ import android.widget.Button;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
+import ca.sfu.g15.accelmath.database.ScoresHandler;
+
 public class CompleteFragment extends Fragment {
 
     private static final String ARG_UNIT_INDEX = "unit_index";
@@ -70,6 +72,7 @@ public class CompleteFragment extends Fragment {
         mFinishButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                ScoresHandler.get(getActivity()).setRating(getActivity(), mUnitIndex, mChapterIndex, mRating);
                 getActivity().finish();
             }
         });

@@ -2,7 +2,14 @@ package ca.sfu.g15.accelmath.database;
 
 import android.content.Context;
 
+import com.bluelinelabs.logansquare.LoganSquare;
+
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.util.ArrayList;
 
 public class ScoresHandler {
 
@@ -12,13 +19,69 @@ public class ScoresHandler {
 
     private Scores mScores;
 
-    private ScoresHandler (Context context) {
-
+    public static ScoresHandler get(Context context) {
+        if (sScoresHandler == null) {
+            sScoresHandler = new ScoresHandler(context);
+        }
+        return sScoresHandler;
     }
 
-    private Scores getScoresFromFiles (Context context) {
-        File file = new File(context.getFilesDir(), FILE_NAME);
-        //TODO read scores from json file
+    public void setRating (Context context, int unitIndex, int chapterIndex, float rating) {
+        Scores.Score score = getScore(unitIndex, chapterIndex);
+        if (score != null && score.rating < rating) {
+            score.rating = rating;
+        } else {
+            Scores.Score newScore = new Scores.Score();
+            newScore.chapterIndex = chapterIndex;
+            newScore.unitIndex = unitIndex;
+            newScore.rating = rating;
+            mScores.scores.add(newScore);
+        }
+        updateScoresInFile(context);
+    }
+
+    public float getRating (int unitIndex, int chapterIndex) {
+        Scores.Score score = getScore(unitIndex, chapterIndex);
+        return score != null ? score.rating : -1f;
+    }
+
+    private Scores.Score getScore(int unitIndex, int chapterIndex) {
+        for (Scores.Score score: mScores.scores) {
+            if (score.unitIndex == unitIndex && score.chapterIndex == chapterIndex) {
+                return score;
+            }
+        }
         return null;
+    }
+
+    private ScoresHandler (Context context) {
+        mScores = getScoresFromFile(context);
+    }
+
+    private Scores getScoresFromFile (Context context) {
+        File file = new File(context.getFilesDir(), FILE_NAME);
+        if (file.exists()) {
+            try {
+                FileInputStream inputStream = context.openFileInput(file.getName());
+                return LoganSquare.parse(inputStream, Scores.class);
+            } catch (FileNotFoundException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        Scores scores = new Scores();
+        scores.scores = new ArrayList<>();
+        return scores;
+    }
+
+    private void updateScoresInFile (Context context) {
+        File file = new File(context.getFilesDir(), FILE_NAME);
+        try {
+            FileOutputStream outputStream = context.openFileOutput(file.getName(), Context.MODE_PRIVATE);
+            LoganSquare.serialize(mScores, outputStream);
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
     }
 }

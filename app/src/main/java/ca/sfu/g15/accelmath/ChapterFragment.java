@@ -16,6 +16,7 @@ import java.util.List;
 
 import ca.sfu.g15.accelmath.database.Database;
 import ca.sfu.g15.accelmath.database.DatabaseHandler;
+import ca.sfu.g15.accelmath.database.ScoresHandler;
 
 public class ChapterFragment extends Fragment{
 
@@ -53,6 +54,12 @@ public class ChapterFragment extends Fragment{
         return view;
     }
 
+    @Override
+    public void onResume() {
+        super.onResume();
+        updateUI();
+    }
+
     private void updateUI() {
         DatabaseHandler handler = DatabaseHandler.get(getActivity());
         List<Database.Unit.Chapter> chapters = handler.getUnits().get(mUnitIndex).chapters;
@@ -85,7 +92,12 @@ public class ChapterFragment extends Fragment{
             mChapter = chapter;
             mChapterIndex = chapterIndex;
             mChapterNameTextView.setText(chapter.topic);
-            mChapterRatingBar.setNumStars(3);
+
+            mChapterRatingBar.setRating(0);
+            float rating = ScoresHandler.get(getActivity()).getRating(mUnitIndex, mChapterIndex);
+            if (rating > 0) {
+                mChapterRatingBar.setRating(rating);
+            }
         }
 
         @Override
