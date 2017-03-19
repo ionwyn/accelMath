@@ -41,28 +41,63 @@
           "lesson": "",
           "questions": [
             {
-              "question": "What is pi?",
-              "answer": "3.14"
+              "question": "Find the value of $$\\lim_{x \\to 3}(x^3 - 9)$$",
+              "options": [
+                "16",
+                "17",
+                "18",
+                "19"
+              ],
+              "answer": "18"
             },
             {
-              "question": "What is pi?",
-              "answer": "3.14"
+              "question": "Which is true of n? $$\\lim_{x \\to 0}\\frac{x^5}{x^n} = 1$$",
+              "options": [
+                "x < 5",
+                "x = 5",
+                "x > 5"
+              ],
+              "answer": "x = 5"
             },
             {
-              "question": "What is pi?",
-              "answer": "3.14"
+              "question": "When \\(x\\) approaches 10, what does the value of \\lim_{x \\to 10}\\frac{x^2-4x+4}{\\left(x-2\\right)^2}?",
+              "options": [
+                "undefined",
+                "\\(\\infty\\)",
+                "0",
+                "1"
+              ],
+              "answer": "1"
             },
             {
-              "question": "What is pi?",
-              "answer": "3.14"
+              "question": "Evaluate $$\\lim_{x \\to -5}\\frac{x^2 -25}{x+5}$$",
+              "options": [
+                "-9",
+                "-10",
+                "-11",
+                "-12"
+              ],
+              "answer": "-10"
             },
             {
-              "question": "What is pi?",
-              "answer": "3.14"
+              "question": "Evaluate $$\\lim_{t \\to 2}\\frac{t^2+3t-4}{t^2-2}$$",
+              "options": [
+                "\\frac56",
+                "2",
+                "\\frac74",
+                "3"
+              ],
+              "answer": "\\frac74"
             },
             {
-              "question": "What is pi?",
-              "answer": "3.14"
+              "question": "Evaluate $$\\lim_{x \\to 0}\\frac{x^2-3x+2}{x^3-2x}$$",
+              "options": [
+                "2",
+                "-\\(infty\\)",
+                "-2",
+                "\\(\\infty\\)"
+              ],
+              "answer": "-\\(infty\\)"
             }
           ]
         },
@@ -71,28 +106,62 @@
           "lesson": "",
           "questions": [
             {
-              "question": "What is pi?",
-              "answer": "3.14"
+              "question": "Let $$f(x) = 2x^3 + 4x^2 - 5x + 7$$ What is the value of \\(f'(2)\\)?",
+              "options": [
+                "34",
+                "35",
+                "36",
+                "37"
+              ],
+              "answer": "35"
             },
             {
-              "question": "What is pi?",
-              "answer": "3.14"
+              "question": "Let n be a real number and $$f(x) = x^n + x^(-n)$$ What is the value of \\(f'(1)\\)?",
+              "options": [
+                "0",
+                "1",
+                "-1",
+                "undefined"
+              ],
+              "answer": "0"
             },
             {
-              "question": "What is pi?",
-              "answer": "3.14"
+              "question": "If \\(f'(x)\\) = \\(g'(x)\\) for all real numbers \\(x\\) then \\(f(x)\\) = \\(g(x)\\) for all real numbers \\(x\\). True or False?",
+              "options": [
+                "True",
+                "False"
+              ],
+              "answer": "False"
             },
             {
-              "question": "What is pi?",
-              "answer": "3.14"
+              "question": "What is the value of $$\\lim_{h \\to 0}\\frac{(5+h)^2 - 5^2}{h}?$$",
+              "options": [
+                "8",
+                "9",
+                "10",
+                "11"
+              ],
+              "answer": "10"
             },
             {
-              "question": "What is pi?",
-              "answer": "3.14"
+              "question": "Let $$f(x) = \\frac{x^7 + x}{x^4}$$ What is the value of \\(f'(1)\\)?",
+              "options": [
+                "-2",
+                "-1",
+                "0",
+                "1"
+              ],
+              "answer": "0"
             },
             {
-              "question": "What is pi?",
-              "answer": "3.14"
+              "question": "If \\(f(x)\\) and \\(g(x)\\) are linear function such that \\(f'(2) = 8\\) and \\(g'(3) = 6\\), what is the value of \\(f'(5) + f'(6)\\)?",
+              "options": [
+                "11",
+                "12",
+                "13",
+                "14"
+              ],
+              "answer": "14"
             }
           ]
         },
