@@ -1,0 +1,109 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{enumitem}
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+\usepackage{amsmath}
+
+\title{linear algebra}
+\author{eruc860303 }
+\date{March 2017}
+
+\begin{document}
+
+\maketitle
+
+
+\section{Matrix and Matrix Operations}
+
+\begin{enumerate}
+    \item Suppose A is a 3 by 4 matrix and B is a 4 by 2 matrix.
+        Describe the dimension of AB.
+        
+        \begin{itemize}
+            \item 3 by 4
+            \item 4 by 2
+            \item 3 by 2
+            \item 4 by 4
+            \item undefined
+        \end{itemize}   
+        
+        Answer: AB will be a 3 by 2 matrix
+        
+        \item Suppose A is a 3 by 4 matrix and B is a 3 by 4 matrix.
+        Describe the dimension of AB.
+        
+        \begin{itemize}
+            \item 3 by 4
+            \item 4 by 2
+            \item 3 by 2
+            \item 4 by 4
+            \item undefined
+        \end{itemize}   
+        
+        Answer: AB is undefined
+
+    \item The following is a 5 by 4 matrix
+        $A = \left( \begin{bmatrix} 5 & 4& 2 & 1 \\ 0 & 2& 0 & 1\\ 7 & 5& 8 & 2\\ 4 & 6& 0 & 0\\ 8 & 9& 6 & 5 \end{bmatrix} \right)$
+        What is the second column of A?
+        
+        \begin{itemize}
+            \item $C2 = \left( \begin{bmatrix} 5\\ 0\\ 7\\ 4\\ 8\\ \end{bmatrix} \right)$
+            \item $C2 = \left( \begin{bmatrix} 4\\ 2\\ 5\\ 6\\ 9\\ \end{bmatrix} \right)$
+            \item $C2 = \left( \begin{bmatrix} 2\\ 0\\ 8\\ 0\\ 6\\ \end{bmatrix} \right)$
+            \item $C2 = \left( \begin{bmatrix} 1\\ 1\\ 2\\ 0\\ 5\\ \end{bmatrix} \right)$
+        \end{itemize}
+        
+        Answer: the second column of matrix A is $C2 = \left( \begin{bmatrix} 4\\ 2\\ 5\\ 6\\ 9\\ \end{bmatrix} \right)$
+    
+    \item The following are 2 by 2 matrices
+        
+         $A = \left( \begin{bmatrix} 3&2\\ 6&1 \end{bmatrix} \right)$
+         $B = \left( \begin{bmatrix} 7&1\\ 4&0 \end{bmatrix} \right)$ 
+         
+        Compute the sum of A + B.
+        
+        \begin{itemize}
+            \item $X = \left( \begin{bmatrix} 10&3\\ 10&1 \end{bmatrix} \right)$
+            \item  $Y = \left( \begin{bmatrix} 12\\ 11 \end{bmatrix} \right)$
+            \item  A + B is undefined    
+        \end{itemize}
+        
+        Answer: Matrix X is the sum of A + B. when both matrices is n * n, then its sum must be a n * n matrix as well
+
+    \item The following are 2 by 2 matrices 
+        
+         $A = \left( \begin{bmatrix} 3&2\\ 6&1 \end{bmatrix} \right)$
+         $B = \left( \begin{bmatrix} 7&1\\ 4&0 \end{bmatrix} \right)$ 
+        
+        Compute the product of AB.
+        
+        \begin{itemize}
+            \item $X = \left( \begin{bmatrix} 21&2\\ 24&0 \end{bmatrix} \right)$
+            \item  $Y = \left( \begin{bmatrix} 29&3\\ 46&6 \end{bmatrix} \right)$
+            \item  $Z = \left( \begin{bmatrix} 10&3\\ 10&1 \end{bmatrix} \right)$
+            \item  AB is undefined    
+        \end{itemize}
+        
+        Answer: matrix Y is the product of AB. 
+        
+        $X = \left( \begin{bmatrix} 3*7 + 2*4& 3*1 + 2*0\\ 6*7 + 1*4&6*1 + 1*0 \end{bmatrix} \right)
+        = \left( \begin{bmatrix} 29&3\\ 46&6 \end{bmatrix} \right)$ 
+     
+    \item Consider the following matrices
+     
+        $A = \left( \begin{bmatrix} 5 & 4& 2 & 1 \\ 0 & 2& 0 & 1\\ 7 & 5& 8 & 2\\ 4 & 6& 0 & 0\\ 8 & 9& 6 & 5 \end{bmatrix} \right)$ 
+        $B = \left( \begin{bmatrix} 12\\ 11 \end{bmatrix} \right)$
+        
+        Compute the product of AB.
+        
+        \begin{itemize}
+            \item $X = \left( \begin{bmatrix} 3&100\\ 25&17 \end{bmatrix} \right)$
+            \item  $Y = \left( \begin{bmatrix} 45&83\\ 98&77 \end{bmatrix} \right)$
+            \item  $Z = \left( \begin{bmatrix} 10&34\\ 11&24 \end{bmatrix} \right)$
+            \item  AB is undefined    
+        \end{itemize}        
+        
+        Answer: the product of AB is undefined since you can not multiply a 5 by 4 matrix with a 2 by 1 matrix
+        
+\end{enumerate}
+\end{document}

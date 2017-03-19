@@ -3,4 +3,10 @@
     <string name="play_button">Play!</string>
     <string name="start_quiz">Start Quiz!</string>
     <string name="sumit">Submit</string>
+    <string name="correct_toast">Correct!</string>
+    <string name="incorrect_toast">Incorrect.</string>
+    <string name="congratulations">Congratulations!</string>
+    <string name="finish">Finish &amp; Save Progress</string>
+    <string name="you_scored">You scored</string>
+    <string name="you_earned">You have earned</string>
 </resources>

@@ -11,6 +11,12 @@
           "questions": [
             {
               "question": "What is pi?",
+              "options": [
+                "3.11",
+                "3.12",
+                "3.13",
+                "3.14"
+              ],
               "answer": "3.14"
             }
           ]
@@ -38,91 +44,199 @@
       "chapters": [
         {
           "topic": "Limits of Functions",
-          "lesson": "",
+          "lesson": "In mathematics, the limit of a function is a fundamental concept in calculus and analysis concerning the behavior of that function near a particular input.\nFormal definitions, first devised in the early 19th century, are given below. Informally, a function f assigns an output f(x) to every input x. We say the function has a limit L at an input p: this means f(x) gets closer and closer to L as x moves closer and closer to p. More specifically, when f is applied to any input sufficiently close to p, the output value is forced arbitrarily close to L. On the other hand, if some inputs very close to p are taken to outputs that stay a fixed distance apart, we say the limit does not exist.\nThe notion of a limit has many applications in modern calculus. In particular, the many definitions of continuity employ the limit: roughly, a function is continuous if all of its limits agree with the values of the function. It also appears in the definition of the derivative: in the calculus of one variable, this is the limiting value of the slope of secant lines to the graph of a function.",
+          "links": "https://en.wikipedia.org/wiki/Limit_of_a_function",
           "questions": [
             {
-              "question": "What is pi?",
-              "answer": "3.14"
+              "question": "Find the value of $$\\lim_{x \\to 3}(x^3 - 9)$$",
+              "options": [
+                "16",
+                "17",
+                "18",
+                "19"
+              ],
+              "answer": "18"
             },
             {
-              "question": "What is pi?",
-              "answer": "3.14"
+              "question": "Which is true of n? $$\\lim_{x \\to 0}\\frac{x^5}{x^n} = 1$$",
+              "options": [
+                "x < 5",
+                "x = 5",
+                "x > 5"
+              ],
+              "answer": "x = 5"
             },
             {
-              "question": "What is pi?",
-              "answer": "3.14"
+              "question": "When \\(x\\) approaches 10, what does the value of $$\\lim_{x \\to 10}\\frac{x^2-4x+4}{\\left(x-2\\right)^2}$$?",
+              "options": [
+                "undefined",
+                "\\(\\infty\\)",
+                "0",
+                "1"
+              ],
+              "answer": "1"
             },
             {
-              "question": "What is pi?",
-              "answer": "3.14"
+              "question": "Evaluate $$\\lim_{x \\to -5}\\frac{x^2 -25}{x+5}$$",
+              "options": [
+                "-9",
+                "-10",
+                "-11",
+                "-12"
+              ],
+              "answer": "-10"
             },
             {
-              "question": "What is pi?",
-              "answer": "3.14"
+              "question": "Evaluate $$\\lim_{t \\to 2}\\frac{t^2+3t-4}{t^2-2}$$",
+              "options": [
+                "\\frac56",
+                "2",
+                "\\frac74",
+                "3"
+              ],
+              "answer": "\\frac74"
             },
             {
-              "question": "What is pi?",
-              "answer": "3.14"
+              "question": "Evaluate $$\\lim_{x \\to 0}\\frac{x^2-3x+2}{x^3-2x}$$",
+              "options": [
+                "2",
+                "-\\(infty\\)",
+                "-2",
+                "\\(\\infty\\)"
+              ],
+              "answer": "-\\(infty\\)"
             }
           ]
         },
         {
           "topic": "Derivatives",
-          "lesson": "",
+          "lesson": "The derivative of a function of a real variable measures the sensitivity to change of the function value with respect to a change in its argument (input value). Derivatives are a fundamental tool of calculus. For example, the derivative of the position of a moving object with respect to time is the object's velocity: this measures how quickly the position of the object changes when time advances.\nThe derivative of a function of a single variable at a chosen input value, when it exists, is the slope of the tangent line to the graph of the function at that point. The tangent line is the best linear approximation of the function near that input value. For this reason, the derivative is often described as the \"instantaneous rate of change\", the ratio of the instantaneous change in the dependent variable to that of the independent variable.\nDerivatives may be generalized to functions of several real variables. In this generalization, the derivative is reinterpreted as a linear transformation whose graph is (after an appropriate translation) the best linear approximation to the graph of the original function. The Jacobian matrix is the matrix that represents this linear transformation with respect to the basis given by the choice of independent and dependent variables. It can be calculated in terms of the partial derivatives with respect to the independent variables. For a real-valued function of several variables, the Jacobian matrix reduces to the gradient vector.",
+          "links": "https://en.wikipedia.org/wiki/Derivative",
           "questions": [
             {
-              "question": "What is pi?",
-              "answer": "3.14"
+              "question": "Let $$f(x) = 2x^3 + 4x^2 - 5x + 7$$ What is the value of \\(f'(2)\\)?",
+              "options": [
+                "34",
+                "35",
+                "36",
+                "37"
+              ],
+              "answer": "35"
             },
             {
-              "question": "What is pi?",
-              "answer": "3.14"
+              "question": "Let n be a real number and $$f(x) = x^n + x^(-n)$$ What is the value of \\(f'(1)\\)?",
+              "options": [
+                "0",
+                "1",
+                "-1",
+                "undefined"
+              ],
+              "answer": "0"
             },
             {
-              "question": "What is pi?",
-              "answer": "3.14"
+              "question": "If \\(f'(x)\\) = \\(g'(x)\\) for all real numbers \\(x\\) then \\(f(x)\\) = \\(g(x)\\) for all real numbers \\(x\\). True or False?",
+              "options": [
+                "True",
+                "False"
+              ],
+              "answer": "False"
             },
             {
-              "question": "What is pi?",
-              "answer": "3.14"
+              "question": "What is the value of $$\\lim_{h \\to 0}\\frac{(5+h)^2 - 5^2}{h}?$$",
+              "options": [
+                "8",
+                "9",
+                "10",
+                "11"
+              ],
+              "answer": "10"
             },
             {
-              "question": "What is pi?",
-              "answer": "3.14"
+              "question": "Let $$f(x) = \\frac{x^7 + x}{x^4}$$ What is the value of \\(f'(1)\\)?",
+              "options": [
+                "-2",
+                "-1",
+                "0",
+                "1"
+              ],
+              "answer": "0"
             },
             {
-              "question": "What is pi?",
-              "answer": "3.14"
+              "question": "If \\(f(x)\\) and \\(g(x)\\) are linear function such that \\(f'(2) = 8\\) and \\(g'(3) = 6\\), what is the value of \\(f'(5) + f'(6)\\)?",
+              "options": [
+                "11",
+                "12",
+                "13",
+                "14"
+              ],
+              "answer": "14"
             }
           ]
         },
         {
           "topic": "Integrals",
-          "lesson": "",
+          "lesson": "In mathematics, an integral assigns numbers to functions in a way that can describe displacement, area, volume, and other concepts that arise by combining infinitesimal data. Integration is one of the two main operations of calculus, with its inverse, differentiation, being the other. Given a function f of a real variable x and an interval [a, b] of the real line, the definite integral\n$$\\int _{a}^{b}\\!f(x)\\,dx$$\nis defined informally as the signed area of the region in the xy-plane that is bounded by the graph of f, the x-axis and the vertical lines x = a and x = b. The area above the x-axis adds to the total and that below the x-axis subtracts from the total.\nRoughly speaking, the operation of integration is the reverse of differentiation. For this reason, the term integral may also refer to the related notion of the antiderivative, a function F whose derivative is the given function f. In this case, it is called an indefinite integral and is written:\n$$F(x)=\\int f(x)\\,dx.$$\nThe integrals discussed in this article are those termed definite integrals. It is the fundamental theorem of calculus that connects differentiation with the definite integral: if f is a continuous real-valued function defined on a closed interval [a, b], then, once an antiderivative F of f is known, the definite integral of f over that interval is given by\n$$\\int _{a}^{b}\\!f(x)\\,dx=F(b)-F(a).$$\nThe principles of integration were formulated independently by Isaac Newton and Gottfried Leibniz in the late 17th century, who thought of the integral as an infinite sum of rectangles of infinitesimal width. A rigorous mathematical definition of the integral was given by Bernhard Riemann. It is based on a limiting procedure which approximates the area of a curvilinear region by breaking the region into thin vertical slabs. Beginning in the nineteenth century, more sophisticated notions of integrals began to appear, where the type of the function as well as the domain over which the integration is performed has been generalised. A line integral is defined for functions of two or three variables, and the interval of integration [a, b] is replaced by a certain curve connecting two points on the plane or in the space. In a surface integral, the curve is replaced by a piece of a surface in the three-dimensional space.",
+          "links": "https://en.wikipedia.org/wiki/Integral",
           "questions": [
             {
-              "question": "What is pi?",
-              "answer": "3.14"
+              "question": "If \\(\\int_0^1 f(x)\\, dx = 1\\), what is the value of $$\\int_0^1 -2 f(x)\\, dx ?$$",
+              "options": [
+                "-2",
+                "-1",
+                "0",
+                "1"
+              ],
+              "answer": "2"
             },
             {
-              "question": "What is pi?",
-              "answer": "3.14"
+              "question": "Suppose \\(\\int_1^2 f(x)\\, dx = 3\\) and \\(\\int_2^3 f(x)\\, dx = 5\\). Find the correct value of $$\\int_0^1 2 f(x) \\, dx$$",
+              "options": [
+                "5",
+                "6",
+                "7",
+                "8"
+              ],
+              "answer": "8"
             },
             {
-              "question": "What is pi?",
-              "answer": "3.14"
+              "question": "Let \\(\\int_0^1 f(x)\\, dx = 2\\) and  \\(\\int_0^1 g(x)\\, dx = 3\\). Choose the correct answer for $$\\int_0^1 \\left(5f(x) + 7g(x)\\right)\\, dx$$" ,
+              "options": [
+                "28",
+                "29",
+                "30",
+                "31"
+              ],
+              "answer": "31"
             },
             {
-              "question": "What is pi?",
-              "answer": "3.14"
+              "question": "Evaluate $$\\int_0^1 (3x^2 + 2x + 5) \\, dx$$",
+              "options": [
+                "5",
+                "6",
+                "7",
+                "8"
+              ],
+              "answer": "7"
             },
             {
-              "question": "What is pi?",
-              "answer": "3.14"
+              "question": "If $$\\int_{0}^{K} x dx =8$$. Assume \\(K\\) > 0, what is the value of \\(K\\)?",
+              "options": [
+                "2",
+                "4",
+                "6",
+                "8"
+              ],
+              "answer": "4"
             },
             {
-              "question": "What is pi?",
-              "answer": "3.14"
+              "question": "Let \\(\\int_0^{5} f(x)\\, dx = 10\\) and  \\(\\int_0^{2} f(x)\\, dx = 5\\). Find $$\\(\\int_2^{3} f(x)\\, dx\\)",
+              "options": [
+                "3",
+                "5",
+                "7",
+                "9"
+              ],
+              "answer": "5"
             }
           ]
         }

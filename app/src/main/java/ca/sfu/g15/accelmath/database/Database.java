@@ -45,6 +45,9 @@ public class Database {
                 public String question;
 
                 @JsonField
+                public List<String> options;
+
+                @JsonField
                 public String answer;
 
             }
