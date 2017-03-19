@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.List;
@@ -36,6 +37,7 @@ public class QuestionFragment extends Fragment implements View.OnClickListener {
 
     private Database.Unit.Chapter.Question mQuestion;
 
+    private TextView mStatusTextView;
     private MathView mQuestionMathView;
     private LinearLayout mButtonContainer;
 
@@ -49,9 +51,9 @@ public class QuestionFragment extends Fragment implements View.OnClickListener {
      * @param pointsScored
      * @return
      */
-    public static QuestionFragment newInstace(int unitIndex, int chapterIndex,
-                                              int[] questionIndices, int currentQuestionIndex,
-                                              int pointsScored) {
+    public static QuestionFragment newInstance(int unitIndex, int chapterIndex,
+                                               int[] questionIndices, int currentQuestionIndex,
+                                               int pointsScored) {
         Bundle args = new Bundle();
         args.putInt(ARG_UNIT_INDEX, unitIndex);
         args.putInt(ARG_CHAPTER_INDEX, chapterIndex);
@@ -83,6 +85,13 @@ public class QuestionFragment extends Fragment implements View.OnClickListener {
         //Get the current question based on mCurrentQuestionIndex
         mQuestion = DatabaseHandler.get(getActivity()).getUnits().get(mUnitIndex).chapters
                 .get(mChapterIndex).questions.get(mQuestionIndices[mCurrentQuestionIndex]);
+
+        int currentQuestion = mCurrentQuestionIndex + 1;
+        int numberOfQuestions = mQuestionIndices.length;
+
+        String statusText = "Question " + currentQuestion + " of " + numberOfQuestions;
+        mStatusTextView = (TextView) view.findViewById(R.id.question_status);
+        mStatusTextView.setText(statusText);
 
         //Set the MathView text to the current question
         mQuestionMathView = (MathView) view.findViewById(R.id.question_math_view);
@@ -128,11 +137,15 @@ public class QuestionFragment extends Fragment implements View.OnClickListener {
         int index = mCurrentQuestionIndex + 1;
         int score = correct ? mPointsScored + 1 : mPointsScored;
 
+        Intent intent;
         if (index < mQuestionIndices.length) {
-            Intent intent = QuestionActivity.newIntent(getActivity(), mUnitIndex, mChapterIndex,
+            intent = QuestionActivity.newIntent(getActivity(), mUnitIndex, mChapterIndex,
                     mQuestionIndices, index, score);
-            startActivity(intent);
+        } else {
+            intent = CompleteActivity.newIntent(getActivity(), mUnitIndex, mChapterIndex,
+                    score, mQuestionIndices.length);
         }
+        startActivity(intent);
         getActivity().finish();
     }
 }

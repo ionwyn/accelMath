@@ -19,6 +19,7 @@
         <activity android:name=".ChapterActivity"></activity>
         <activity android:name=".LessonActivity"></activity>
         <activity android:name=".QuestionActivity"></activity>
+        <activity android:name=".CompleteActivity"></activity>
     </application>
 
 </manifest>
