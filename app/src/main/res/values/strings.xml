@@ -6,7 +6,7 @@
     <string name="correct_toast">Correct!</string>
     <string name="incorrect_toast">Incorrect.</string>
     <string name="congratulations">Congratulations!</string>
-    <string name="finish">Finish</string>
+    <string name="finish">Finish &amp; Save Progress</string>
     <string name="you_scored">You scored</string>
     <string name="you_earned">You have earned</string>
 </resources>
