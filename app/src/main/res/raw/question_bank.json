@@ -39,6 +39,7 @@
         {
           "topic": "Limits of Functions",
           "lesson": "",
+          "links": "https://en.wikipedia.org/wiki/Limit_of_a_function",
           "questions": [
             {
               "question": "Find the value of $$\\lim_{x \\to 3}(x^3 - 9)$$",
@@ -60,7 +61,7 @@
               "answer": "x = 5"
             },
             {
-              "question": "When \\(x\\) approaches 10, what does the value of \\lim_{x \\to 10}\\frac{x^2-4x+4}{\\left(x-2\\right)^2}?",
+              "question": "When \\(x\\) approaches 10, what does the value of $$\\lim_{x \\to 10}\\frac{x^2-4x+4}{\\left(x-2\\right)^2}$$?",
               "options": [
                 "undefined",
                 "\\(\\infty\\)",
@@ -104,6 +105,7 @@
         {
           "topic": "Derivatives",
           "lesson": "",
+          "links": "https://en.wikipedia.org/wiki/Derivative",
           "questions": [
             {
               "question": "Let $$f(x) = 2x^3 + 4x^2 - 5x + 7$$ What is the value of \\(f'(2)\\)?",
@@ -168,6 +170,7 @@
         {
           "topic": "Integrals",
           "lesson": "",
+          "links": "https://en.wikipedia.org/wiki/Integral",
           "questions": [
             {
               "question": "What is pi?",
