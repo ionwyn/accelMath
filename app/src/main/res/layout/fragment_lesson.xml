@@ -30,8 +30,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 auto:engine="KaTeX"
-                auto:text="When \\(a \\ne 0\\), there are two solutions to \\(ax^2 + bx + c = 0\\)
-        and they are $$x = {-b \\pm \\sqrt{b^2-4ac} \\over 2a}.$$"
+                auto:text="If \\(f(x)\\) and \\(g(x)\\) are linear function such that \\(f'(2) = 8\\) and \\(g'(3) = 6\\), what is the value of \\(f'(5) + f'(6)\\)?"
                 >
             </io.github.kexanie.library.MathView>
             <Button
