@@ -20,8 +20,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 auto:engine="MathJax"
-                auto:text="When \\(a \\ne 0\\), there are two solutions to \\(ax^2 + bx + c = 0\\)
-        and they are $$x = {-b \\pm \\sqrt{b^2-4ac} \\over 2a}.$$">
+                auto:text="When \\(x\\) approaches 10, what does the value of $$\\lim_{x \\to 10}\\frac{x^2-4x+4}{\\left(x-2\\right)^2}$$?">
 
             </io.github.kexanie.library.MathView>
 
