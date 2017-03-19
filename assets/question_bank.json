@@ -2,200 +2,221 @@
   "edition": "Default",
   "data": [
     {
-      "unit": "Discrete Mathematics",
+      "unitName": "Discrete Mathematics",
       "chapters": [
         {
           "topic": "Binomial Theorem",
+          "lesson": "asd",
           "questions": [
             {
               "question": "5 people became friends at a Summer Camp. On the last day, they shook each other's hands to say farewell. How many handshakes were there?",
-              "choices": {
-                "a": 5,
-                "b": 10,
-                "c": 25,
-                "d": 6
-              },
-              "answer": "Answer: 10\n    \n    Solution 1: Let's count it slowly, by per person. \n    The first person has 4 other hands to shake. Now let's ignore the first person. \n    The second person has 3 other hands to shake (excluding the first person). Now let's ignore the second person. \n    The third person has 2 other hands to shake (excluding the first and second person). Now let's ignore the third person. \n    The fourth person has 1 other hands to shake (excluding the first, second and third person). This is all that remains.\n    \n    Hence, there are  \\( 4 + 3 + 2 + 1 = 10 \\) handshakes that occurred.\n    \n    Solution 2: We can draw a graph to represent this. There are 5 vertices representing each of the students. Between each vertex, we draw an edge to represent a handshake. We can count that there are 10 edges, hence there are 10 handshakes that occurred."
+              "options": [
+                "5",
+                "10",
+                "25",
+                "6"
+              ],
+              "answer": "10",
+              "solution": "Answer: 10\n    \n    Solution 1: Let's count it slowly, by per person. \n    The first person has 4 other hands to shake. Now let's ignore the first person. \n    The second person has 3 other hands to shake (excluding the first person). Now let's ignore the second person. \n    The third person has 2 other hands to shake (excluding the first and second person). Now let's ignore the third person. \n    The fourth person has 1 other hands to shake (excluding the first, second and third person). This is all that remains.\n    \n    Hence, there are  \\( 4 + 3 + 2 + 1 = 10 \\) handshakes that occurred.\n    \n    Solution 2: We can draw a graph to represent this. There are 5 vertices representing each of the students. Between each vertex, we draw an edge to represent a handshake. We can count that there are 10 edges, hence there are 10 handshakes that occurred."
             },
             {
               "question": "What positive integer \\(n\\) satisfies\n \\[{{n+2} \\choose 7}=41 \\cdot {n \\choose 5}?\\]",
-              "choices": {
-                "a": 108,
-                "b": 41,
-                "c": 40,
-                "d": 0
-              },
-              "answer": "Answer: 40\n    \n    Observe that the equation can be rewritten as\n\n     \\[{{n+2} \\choose 7} =41 \\cdot {n \\choose 5} \\ \\frac{(n+2)(n+1)n(n-1)}{7!} =41 \times \frac{n(n-1)}{5!}.\\]\n    \n    Since  \\(n\\) is positive, dividing both sides of this by  \\(n(n-1)\\) gives\n     \\[(n+2)(n+1) =42 \\cdot 41.\\]\n\n    This is satisfied for  \\(n=40\\)."
+              "options": [
+                "108",
+                "41",
+                "40",
+                "0"
+              ],
+              "answer": "40",
+              "solution": "Answer: 40\n    \n    Observe that the equation can be rewritten as\n\n     \\[{{n+2} \\choose 7} =41 \\cdot {n \\choose 5} \\ \\frac{(n+2)(n+1)n(n-1)}{7!} =41 \times \frac{n(n-1)}{5!}.\\]\n    \n    Since  \\(n\\) is positive, dividing both sides of this by  \\(n(n-1)\\) gives\n     \\[(n+2)(n+1) =42 \\cdot 41.\\]\n\n    This is satisfied for  \\(n=40\\)."
             },
             {
               "question": "Binomial Theorem Expansions\n    \n    For what value of  \\(N\\), is the following an algebraic identity:\n\n     \\[ (x+y)^N = x^4 + 4 x^3 y + 6 x^2y^2 + 4 xy^3 + y^4? \\]",
-              "choices": {
-                "a": 1,
-                "b": 2,
-                "c": 3,
-                "d": 4
-              },
-              "answer": "Answer: 4\n     \n     By the binomial theorem, we know that\n\n     \\[ (x+y)^4 = = x^4 + 4 x^3 y + 6 x^2y^2 + 4 xy^3 + y^4. \\]"
+              "options": [
+                "1",
+                "2",
+                "3",
+                "4"
+              ],
+              "answer": "4",
+              "solution": "Answer: 4\n     \n     By the binomial theorem, we know that\n\n     \\[ (x+y)^4 = = x^4 + 4 x^3 y + 6 x^2y^2 + 4 xy^3 + y^4. \\]"
             },
             {
               "question": "Binomial Theorem challenge:\n     \n      \\[\n      \\sum_{ r=0 }^{ n } { (-1 )}^{ r } {{n}\\choose{r}}^{-1} \\]\n      \n      If  \\(n\\) is an an odd positive integer, find the value of this sum.",
-              "choices": {
-                "a": -1,
-                "b": 0,
-                "c": 1,
-                "d": null
-              },
-              "answer": "Answer: 0\n     \n     Recall that  \\({{n}\\choose{r}} = {{n}\\choose{n - r}}.\\) Since  \\(n\\) is odd,  \\(n-r\\) has the opposite parity as  \\(r,\\) so\n\n     \\[{(-1)^r} {{{n}\\choose{r}}^{-1}} = -(-1)^{n-r}{{n}\\choose{n-r}}^{-1}.\\]\n    \n    Thus, when we pair the terms in this way, each pair sums to 0, so the summation is 0."
+              "options": [
+                "-1",
+                "0",
+                "1",
+                "null"
+              ],
+              "answer": "0",
+              "solution": "Answer: 0\n     \n     Recall that  \\({{n}\\choose{r}} = {{n}\\choose{n - r}}.\\) Since  \\(n\\) is odd,  \\(n-r\\) has the opposite parity as  \\(r,\\) so\n\n     \\[{(-1)^r} {{{n}\\choose{r}}^{-1}} = -(-1)^{n-r}{{n}\\choose{n-r}}^{-1}.\\]\n    \n    Thus, when we pair the terms in this way, each pair sums to 0, so the summation is 0."
             },
             {
               "question": "Binomial Theorem Challenge 2:\n    \n     \\[ \\large \\sum_{k=0}^n \\left[ (-1)^k {{n}\\choose{k}} (n-k)^n \right] = \\ ? \\]",
-              "choices": {
-                "a": "n!",
-                "b": 1,
-                "c": "(n-1)!",
-                "d": 0
-              },
-              "answer": "Answer: n!\n    \n    In a bijective, number of elements in domain = number of elements of co-domain = (n) and range is equal to co-domain.\n    \n    In a bijective, No. of one-one functions is equal to number of onto functions.\n    \n    No.of. onto functions =  \\(\\sum_{k=0}^n(-1)^k{{n}\\choose{n-k}}^m\\).\n    \n    Here, m = n.\n    \n    So,  \\(\\sum_{k=0}^n(-1)^k{{n}\\choose{n-k}}^n\\) = number of one-one functions from n to n = n!.\n"
+              "options": [
+                "n!",
+                "1",
+                "(n-1)!",
+                "0"
+              ],
+              "answer": "n!",
+              "solution": "Answer: n!\n    \n    In a bijective, number of elements in domain = number of elements of co-domain = (n) and range is equal to co-domain.\n    \n    In a bijective, No. of one-one functions is equal to number of onto functions.\n    \n    No.of. onto functions =  \\(\\sum_{k=0}^n(-1)^k{{n}\\choose{n-k}}^m\\).\n    \n    Here, m = n.\n    \n    So,  \\(\\sum_{k=0}^n(-1)^k{{n}\\choose{n-k}}^n\\) = number of one-one functions from n to n = n!.\n"
             },
             {
               "question": "Binomial Theorem Challenge 3:\n    \n    Find the number of odd coefficients in the expansion of  \\( (a + b)^{2015} \\).",
-              "choices": {
-                "a": 512,
-                "b": 1024,
-                "c": 2048,
-                "d": 2047
-              },
-              "answer": "Answer: 1024\n    \n    We will make use of a consequence of Lucas' Theorem, whereby a binomial coefficient  \\({{m}\\choose{n}}\\) is odd if and only if none of the digits in the binary expansion of  \\(n\\) is greater than the corresponding digit in the binary expansion of  \\(m.\\)\n\n    In this case we have  \\(m = 2015,\\) which has a binary of 11111011111.\n    \n    So all those binomial coefficients  \\({{2015}\\choose{n}}\\) in the expansion of  \\((a + b)^{2015}\\) for which  \\(n\\) does not have a  \\(1\\) in the  \\(6\\)th from the right digit in their binary expansion will be odd. \n    \n    Since all numbers from  \\(2016\\) to  \\(2047\\) do have a  \\(1\\) in this position, we can then conclude that\n    the number of values \\(n\\) from \\(0\\) to \\(2015\\) inclusive that do not have a  \\(1\\) in this position will be  \\(\frac{2048}{2} = 1024.\\)"
+              "options": [
+                "512",
+                "1024",
+                "2048",
+                "2047"
+              ],
+              "answer": "1024",
+              "solution": "Answer: 1024\n    \n    We will make use of a consequence of Lucas' Theorem, whereby a binomial coefficient  \\({{m}\\choose{n}}\\) is odd if and only if none of the digits in the binary expansion of  \\(n\\) is greater than the corresponding digit in the binary expansion of  \\(m.\\)\n\n    In this case we have  \\(m = 2015,\\) which has a binary of 11111011111.\n    \n    So all those binomial coefficients  \\({{2015}\\choose{n}}\\) in the expansion of  \\((a + b)^{2015}\\) for which  \\(n\\) does not have a  \\(1\\) in the  \\(6\\)th from the right digit in their binary expansion will be odd. \n    \n    Since all numbers from  \\(2016\\) to  \\(2047\\) do have a  \\(1\\) in this position, we can then conclude that\n    the number of values \\(n\\) from \\(0\\) to \\(2015\\) inclusive that do not have a  \\(1\\) in this position will be  \\(\frac{2048}{2} = 1024.\\)"
             }
           ]
         },
         {
           "topic": "Rule of Sum and Product",
+          "lesson": "asd",
           "questions": [
             {
               "question": "A university has three parking lots, call it A, B, and C.  Lot A has 80 spaces, lot B has 90 spaces, and lot C has 310 spaces.  If a car comes to the university, how many choices are there for the car to park in the parking space?",
-              "choices": {
-                "a": 480,
-                "b": 310,
-                "c": 300,
-                "d": "uncountable"
-              },
-              "answer": "Answer: 480"
+              "options": [
+                "480",
+                "310",
+                "300",
+                "uncountable"
+              ],
+              "answer": "480",
+              "solution": "Answer: 480"
             },
             {
               "question": "\\item How many triples of positive integers \\( (a, b, c) \\) are there such that\n    \n    \\[\frac{a^2 + b^2}{c}, \\quad <4a\\le 5, \\quad b\\le 5, \\quad c\\le 5? \\]",
-              "choices": {
-                "a": 19,
-                "b": 24,
-                "c": 29,
-                "d": 34
-              },
-              "answer": "Answer: 29\n    \n    Since all of  \\(a, b\\) and  \\(c\\) are positive integers between  \\(1\\) and  \\(5,\\) inclusive, we check each of the options as follows:\n\nIf  \\( c = 5, \\) then  \\((a, b)=(4,1)\\) or  \\((3,3)\\) or  \\((3,2)\\) or  \\((3,1)\\) or  \\((2,3)\\) or  \\((2,2)\\) or  \\((2, 1)\\) or  \\((1,4)\\) or  \\((1, 3)\\) or  \\((1, 2)\\) or  \\((1, 1),\\) which gives  \\(11\\) solutions.\n\nIf  \\( c = 4, \\) then  \\((a, b)=(3,2)\\) or  \\((3,1)\\) or  \\((2,3)\\) or  \\((2,2)\\) or  \\((2, 1)\\) or  \\((1, 3)\\) or  \\((1, 2)\\) or  \\((1, 1),\\) which gives  \\(8\\) solutions.\n\nIf  \\( c = 3, \\) then  \\((a, b)=(3,1)\\) or  \\((2,2)\\) or  \\((2, 1)\\) or  \\((1, 3)\\) or  \\((1, 2)\\) or  \\((1, 1),\\) which gives  \\(6\\) solutions.\n\nIf  \\( c = 2, \\) then  \\((a, b)=(2, 1)\\) or  \\((1, 2)\\) or  \\((1, 1),\\) which gives  \\(3\\) solutions.\n\nIf  \\( c = 1, \\) then  \\((a, b)=(1, 1),\\) which gives  \\(1\\) solution.\n\nHence, there are  \\(11+8+6+3+1=29\\) solutions altogether."
+              "options": [
+                "19",
+                "24",
+                "29",
+                "34"
+              ],
+              "answer": "29",
+              "solution": "Answer: 29\n    \n    Since all of  \\(a, b\\) and  \\(c\\) are positive integers between  \\(1\\) and  \\(5,\\) inclusive, we check each of the options as follows:\n\nIf  \\( c = 5, \\) then  \\((a, b)=(4,1)\\) or  \\((3,3)\\) or  \\((3,2)\\) or  \\((3,1)\\) or  \\((2,3)\\) or  \\((2,2)\\) or  \\((2, 1)\\) or  \\((1,4)\\) or  \\((1, 3)\\) or  \\((1, 2)\\) or  \\((1, 1),\\) which gives  \\(11\\) solutions.\n\nIf  \\( c = 4, \\) then  \\((a, b)=(3,2)\\) or  \\((3,1)\\) or  \\((2,3)\\) or  \\((2,2)\\) or  \\((2, 1)\\) or  \\((1, 3)\\) or  \\((1, 2)\\) or  \\((1, 1),\\) which gives  \\(8\\) solutions.\n\nIf  \\( c = 3, \\) then  \\((a, b)=(3,1)\\) or  \\((2,2)\\) or  \\((2, 1)\\) or  \\((1, 3)\\) or  \\((1, 2)\\) or  \\((1, 1),\\) which gives  \\(6\\) solutions.\n\nIf  \\( c = 2, \\) then  \\((a, b)=(2, 1)\\) or  \\((1, 2)\\) or  \\((1, 1),\\) which gives  \\(3\\) solutions.\n\nIf  \\( c = 1, \\) then  \\((a, b)=(1, 1),\\) which gives  \\(1\\) solution.\n\nHence, there are  \\(11+8+6+3+1=29\\) solutions altogether."
             },
             {
               "question": "\n    \\item While training for the Olympics, Sebastian as to swim, then cycle, and then run.  To practice, he can either 200, 300, 400, or 500 meters, then cycle for 5, 8, 13, or 21 kilometers, and finally run for either 2 or 3 kilometers.  How many possible choices of training does Sebastian have?",
-              "choices": {
-                "a": 1,
-                "b": 3,
-                "c": 10,
-                "d": 12
-              },
-              "answer": "Answer:\n    32\n    \n    Since Trina will be doing each activity, we use the rule of product. So Sebastian will have \\(4 \times 4 \times 2 = 32\\) possible choices for her training."
+              "options": [
+                "1",
+                "3",
+                "10",
+                "12"
+              ],
+              "answer": "32",
+              "solution": "Answer:\n    32\n    \n    Since Trina will be doing each activity, we use the rule of product. So Sebastian will have \\(4 \times 4 \times 2 = 32\\) possible choices for her training."
             },
             {
               "question": "In Alice's closet, there are $4$ different pants, $9$ different shirts and $n$ different jackets. If the number of combinations of pants, shirts and jackets Alice can choose is $252$ how many different jackets does she have?",
-              "choices": {
-                "a": 7,
-                "b": 9,
-                "c": 13,
-                "d": 239
-              },
-              "answer": "Answer: 7\n    For each of the  \\(n\\) different jackets, there are  \\(4\\) different pants and  \\(9\\) different shirts to choose from. Thus, the total number of combinations is  \\(4 \times 9 \times n,\\) implying\n\n \\[4 \times 9 \times n & = 252 \\]\n \\[n = 7 \\]\n\nThus, Alice has  \\(7\\) different jackets."
+              "options": [
+                "7",
+                "9",
+                "13",
+                "239"
+              ],
+              "answer": "7",
+              "solution": "Answer: 7\n    For each of the  \\(n\\) different jackets, there are  \\(4\\) different pants and  \\(9\\) different shirts to choose from. Thus, the total number of combinations is  \\(4 \times 9 \times n,\\) implying\n\n \\[4 \times 9 \times n & = 252 \\]\n \\[n = 7 \\]\n\nThus, Alice has  \\(7\\) different jackets."
             },
             {
               "question": "Find the number of $2$ digit numbers whose digit sum is a perfect square.",
-              "choices": {
-                "a": 5,
-                "b": 14,
-                "c": 20,
-                "d": 17
-              },
-              "answer": "Answer: 17\n    \n    Let  \\(n=10a+b\\). We have that  \\(1<=a<=9\\) and  \\(0<=b<=9\\), so  \\(0<=a+b<=18\\). The perfect squares for that range is  \\(1,4,9 \\) and  \\(16\\). For the case  \\(1\\),  \\(10\\) is unique because you can't raise  \\(b\\) and lower  \\(a\\) and  \\(a+b\\) remain as  \\(1\\). For the case  \\(4\\) the higher value is  \\(40\\), so we have  \\(4\\) possibilities because  \\(1<=a<=4\\). For the case  \\(9\\),  \\(90\\) is the higher value,  \\(1<=a<=9\\) so we have  \\(9\\) possibilities. Finally, for the case  \\(16\\),  \\(97\\) is the higher value, as we lower  \\(a\\) and raise  \\(b\\) we will have only  \\(3\\) possibilities because  \\(b\\) already started at  \\(7\\). Summing all possibilities:  \\(1+4+9+3=17\\)."
+              "options": [
+                "5",
+                "14",
+                "20",
+                "17"
+              ],
+              "answer": "17",
+              "solution": "Answer: 17\n    \n    Let  \\(n=10a+b\\). We have that  \\(1<=a<=9\\) and  \\(0<=b<=9\\), so  \\(0<=a+b<=18\\). The perfect squares for that range is  \\(1,4,9 \\) and  \\(16\\). For the case  \\(1\\),  \\(10\\) is unique because you can't raise  \\(b\\) and lower  \\(a\\) and  \\(a+b\\) remain as  \\(1\\). For the case  \\(4\\) the higher value is  \\(40\\), so we have  \\(4\\) possibilities because  \\(1<=a<=4\\). For the case  \\(9\\),  \\(90\\) is the higher value,  \\(1<=a<=9\\) so we have  \\(9\\) possibilities. Finally, for the case  \\(16\\),  \\(97\\) is the higher value, as we lower  \\(a\\) and raise  \\(b\\) we will have only  \\(3\\) possibilities because  \\(b\\) already started at  \\(7\\). Summing all possibilities:  \\(1+4+9+3=17\\)."
             },
             {
               "question": "If you take a  \\(3 \times 3 \times 3\\) Rubik cube and break it up into the  \\( 3^3 \\) cubes, how many cubes would have stickers on exactly  \\(2\\) faces?",
-              "choices": {
-                "a": 6,
-                "b": 8,
-                "c": 12,
-                "d": 26
-              },
-              "answer": "Answer: 12\n    \n    Typical Rubik's cube ($3 \times 3 \times 3$) has 8 corners and 12 sides.  There is only one cube in between the two corner cubes at each side. This yields the number of cubes having sticker on two side be  \\(12\times1 =\boxed{12}\\)."
+              "options": [
+                "6",
+                "8",
+                "12",
+                "26"
+              ],
+              "answer": "12",
+              "solution": "Answer: 12\n    \n    Typical Rubik's cube ($3 \times 3 \times 3$) has 8 corners and 12 sides.  There is only one cube in between the two corner cubes at each side. This yields the number of cubes having sticker on two side be  \\(12\times1 =\boxed{12}\\)."
             }
           ]
         },
         {
           "topic": "Set Theory",
+          "lesson": "asd",
           "questions": [
             {
               "question": "\\item Given the sets \\(A = \\{2, 20, 22, 5, 13\\}\\) and \\(B = \\{6, 9, 20, 12, 22\\}\\), what is the sum of all the elements in \\(A \\cup B\\)?",
-              "choices": {
-                "a": 89,
-                "b": 131,
-                "c": 42,
-                "d": 98
-              },
-              "answer": "Answer: 89\n    \n     \\(A \\cup B\\) is the set of elements in  \\(A\\) or  \\(B\\). So we have  \\(A \\cup B = A + B - A \\cap B\\), where  \\(A \\cap B = \\{20, 22\\}\\). Thus  \\(A \\cup B = \\{2, 5, 6, 9, 12, 13, 20, 22 \\}\\). Hence the sum is  \\(2 + 5 + 6 + 9 + 12 + 13 + 20 + 22 = 89\\)."
+              "options": [
+                "89",
+                "131",
+                "42",
+                "98"
+              ],
+              "answer": "89",
+              "solution": "Answer: 89\n    \n     \\(A \\cup B\\) is the set of elements in  \\(A\\) or  \\(B\\). So we have  \\(A \\cup B = A + B - A \\cap B\\), where  \\(A \\cap B = \\{20, 22\\}\\). Thus  \\(A \\cup B = \\{2, 5, 6, 9, 12, 13, 20, 22 \\}\\). Hence the sum is  \\(2 + 5 + 6 + 9 + 12 + 13 + 20 + 22 = 89\\)."
             },
             {
               "question": "Symmetric Difference\n     \\[\n     A =\\{x \\mid -8 < x < 4, x \text{ is an integer} \\},\n     \\]\n     \\[\n     B =\\{x \\mid -2 < x \\leq 11, x \text{ is an integer} \\}.\\]\nWhat is  \\( \\lvert A \triangle B \rvert, \text{ the size of the symmetric difference of A and B} ?\\)",
-              "choices": {
-                "a": 13,
-                "b": 11,
-                "c": 14,
-                "d": 9
-              },
-              "answer": "Answer: 14\n     \n     Observe that  \\(A \\cup B\\) is the set of integers  \\(x\\) satisfying  \\( - 8 < x \\leq 11\\) and  \\(A \\cap B\\) is the set of integers  \\(x\\) satisfying  \\(-2 < x < 4.\\) This implies\n \\[\begin{aligned} A \triangle B &= (A \\cup B)-(A \\cap B) \\ &= \\{x \\mid -8 < x \\leq -2, \text{ or } 4 \\leq x \\leq 11, x \text{ is an integer} \\}. \\end{aligned} \\]\nThus, the number of elements in the set  \\(A \triangle B\\) is\n \\[ \\lvert A \triangle B \rvert = (-2-(-8))+(11-4+1)=14.\\]"
+              "options": [
+                "13",
+                "11",
+                "14",
+                "9"
+              ],
+              "answer": "14",
+              "solution": "Answer: 14\n     \n     Observe that  \\(A \\cup B\\) is the set of integers  \\(x\\) satisfying  \\( - 8 < x \\leq 11\\) and  \\(A \\cap B\\) is the set of integers  \\(x\\) satisfying  \\(-2 < x < 4.\\) This implies\n \\[\begin{aligned} A \triangle B &= (A \\cup B)-(A \\cap B) \\ &= \\{x \\mid -8 < x \\leq -2, \text{ or } 4 \\leq x \\leq 11, x \text{ is an integer} \\}. \\end{aligned} \\]\nThus, the number of elements in the set  \\(A \triangle B\\) is\n \\[ \\lvert A \triangle B \rvert = (-2-(-8))+(11-4+1)=14.\\]"
             },
             {
               "question": "In counting the numbers from 1 to 99 (inclusive), what is the total number of times that the digit 3 is used?\n\n    Details and assumptions \n    The number $12$ uses the digit 1 once and the digit 2 once. \n    The number $111$ uses the digit 1 three times.",
-              "choices": {
-                "a": 3,
-                "b": 9,
-                "c": 10,
-                "d": 20
-              },
-              "answer": "Answer: 20"
+              "options": [
+                "3",
+                "9",
+                "10",
+                "20"
+              ],
+              "answer": "20",
+              "solution": "Answer: 20"
             },
             {
               "question": "Ian picked 68 distinct integers out of the first 100 positive integers. What is the minimum number of odd integers that Ian must have picked?",
-              "choices": {
-                "a": 50,
-                "b": 18,
-                "c": 34,
-                "d": 51
-              },
-              "answer": "Since there are 50 even integers out of the first 100 positive integers, at most 50 of the distinct integers in  are even. Hence, at least 68 - 50 = 18 integers are odd. It is clear how to create such a set - pick all 50 even integers, and then any 18 odd integers."
+              "options": [
+                "50",
+                "18",
+                "34",
+                "51"
+              ],
+              "answer": "18",
+              "solution": "Since there are 50 even integers out of the first 100 positive integers, at most 50 of the distinct integers in  are even. Hence, at least 68 - 50 = 18 integers are odd. It is clear how to create such a set - pick all 50 even integers, and then any 18 odd integers."
             },
             {
               "question": "\\(100\\) students take an exam with two questions a and b. If  \\(66\\) students solved question a,  \\(54\\) students solved question b, and  \\(18\\) students solved neither of the two questions, how many students solved only a?",
-              "choices": {
-                "a": 28,
-                "b": 36,
-                "c": 38,
-                "d": 34
-              },
-              "answer": "Answer: 28\n    \n    Let  \\(A\\) and  \\(B\\) be the sets of students who solved a and b, respectively. Then the number of students who solved at least one question is  \\(\\lvert{A \\cup B}\rvert=100-18=82\\) because  \\(18\\) students out of  \\(100\\) solved neither of the two questions. Hence, the number of students who solved both a and b can be calculated as follows:\n     \\[\begin{aligned} \\lvert{A \\cap B}\rvert &= \\lvert{A}\rvert+\\lvert{B}\rvert-\\lvert{A \\cup B}\rvert \\ &= 66+54-82 \\ &= 38. \\end{aligned} \\]\n    Thus, the number of students who solved only a, or equivalently, who solved a but did not solve b is\n     \\[\begin{aligned} \\lvert{A \\setminus B}\rvert &= \\lvert{A}\rvert-\\lvert{A \\cap B}\rvert \\ &= 66-38 \\ &= 28. \\end{aligned} \\]"
+              "options": [
+                "28",
+                "36",
+                "38",
+                "34"
+              ],
+              "answer": "28",
+              "solution": "Answer: 28\n    \n    Let  \\(A\\) and  \\(B\\) be the sets of students who solved a and b, respectively. Then the number of students who solved at least one question is  \\(\\lvert{A \\cup B}\rvert=100-18=82\\) because  \\(18\\) students out of  \\(100\\) solved neither of the two questions. Hence, the number of students who solved both a and b can be calculated as follows:\n     \\[\begin{aligned} \\lvert{A \\cap B}\rvert &= \\lvert{A}\rvert+\\lvert{B}\rvert-\\lvert{A \\cup B}\rvert \\ &= 66+54-82 \\ &= 38. \\end{aligned} \\]\n    Thus, the number of students who solved only a, or equivalently, who solved a but did not solve b is\n     \\[\begin{aligned} \\lvert{A \\setminus B}\rvert &= \\lvert{A}\rvert-\\lvert{A \\cap B}\rvert \\ &= 66-38 \\ &= 28. \\end{aligned} \\]"
             },
             {
               "question": "Person \"A\" says the truth 60\\% of the time, and person \"B\" does so 90\\% of the time. In what percentage of cases are they likely to contradict each other in stating the same fact?",
-              "choices": {
-                "a": "42%",
-                "b": "54%",
-                "c": "60%",
-                "d": "36%"
-              },
-              "answer": "Answer: 42\\%\n     \n     when they both say true the probability is 60*90/100=54;\n\n    When the both say false at same time is 40*10/100=4;\n    So the say always the same fact is 54+4=58\\%;    \n    So the percentage of cases that they contradict each other is 100-58=42\\%"
+              "options": [
+                "42%",
+                "54%",
+                "60%",
+                "36%"
+              ],
+              "answer": "42",
+              "solution": "Answer: 42\\%\n     \n     when they both say true the probability is 60*90/100=54;\n\n    When the both say false at same time is 40*10/100=4;\n    So the say always the same fact is 54+4=58\\%;    \n    So the percentage of cases that they contradict each other is 100-58=42\\%"
             }
           ]
         }
