@@ -1,0 +1,116 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+
+\title{Discrete Math Set Theory}
+\author{ionwynsean }
+\date{March 2017}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+\section{Questions}
+
+\begin{enumerate}
+    \item Given the sets \(A = \{2, 20, 22, 5, 13\}\) and \(B = \{6, 9, 20, 12, 22\}\), what is the sum of all the elements in \(A \cup B\)?
+    
+    \begin{itemize}
+        \item 89
+        \item 131
+        \item 47
+        \item 98
+    \end{itemize}
+    
+    Answer: 89
+    
+     \(A \cup B\) is the set of elements in  \(A\) or  \(B\). So we have  \(A \cup B = A + B - A \cap B\), where  \(A \cap B = \{20, 22\}\). Thus  \(A \cup B = \{2, 5, 6, 9, 12, 13, 20, 22 \}\). Hence the sum is  \(2 + 5 + 6 + 9 + 12 + 13 + 20 + 22 = 89\).
+     
+     \item  Symmetric Difference
+     \[
+     A =\{x \mid -8 < x < 4, x \text{ is an integer} \},
+     \]
+     \[
+     B =\{x \mid -2 < x \leq 11, x \text{ is an integer} \}.\]
+What is  \( \lvert A \triangle B \rvert, \text{ the size of the symmetric difference of A and B} ?\)
+
+    \begin{itemize}
+        \item 13
+        \item 11
+        \item 14
+        \item 9
+    \end{itemize}
+     
+     Answer: 14
+     
+     Observe that  \(A \cup B\) is the set of integers  \(x\) satisfying  \( - 8 < x \leq 11\) and  \(A \cap B\) is the set of integers  \(x\) satisfying  \(-2 < x < 4.\) This implies
+ \[\begin{aligned} A \triangle B &= (A \cup B)-(A \cap B) \\ &= \{x \mid -8 < x \leq -2, \text{ or } 4 \leq x \leq 11, x \text{ is an integer} \}. \end{aligned} \]
+Thus, the number of elements in the set  \(A \triangle B\) is
+ \[ \lvert A \triangle B \rvert = (-2-(-8))+(11-4+1)=14.\]
+ 
+    \item In counting the numbers from 1 to 99 (inclusive), what is the total number of times that the digit 3 is used?
+
+    Details and assumptions 
+    The number $12$ uses the digit 1 once and the digit 2 once. 
+    The number $111$ uses the digit 1 three times.
+
+    \begin{itemize}
+        \item 3
+        \item 9
+        \item 10
+        \item 20
+    \end{itemize}
+     
+     Answer: 20
+     
+     \item Ian picked 68 distinct integers out of the first 100 positive integers. What is the minimum number of odd integers that Ian must have picked?
+     
+     \begin{itemize}
+         \item 50
+         \item 18
+         \item 34
+         \item 51
+     \end{itemize}
+     
+     Answer: 18
+     
+    Since there are 50 even integers out of the first 100 positive integers, at most 50 of the distinct integers in  are even. Hence, at least 68 - 50 = 18 integers are odd. It is clear how to create such a set - pick all 50 even integers, and then any 18 odd integers.
+    
+    \item  \(100\) students take an exam with two questions a and b. If  \(66\) students solved question a,  \(54\) students solved question b, and  \(18\) students solved neither of the two questions, how many students solved only a?
+    
+    \begin{itemize}
+        \item 28
+        \item 36
+        \item 38
+        \item 34
+    \end{itemize}
+    
+    Answer: 28
+    
+    Let  \(A\) and  \(B\) be the sets of students who solved a and b, respectively. Then the number of students who solved at least one question is  \(\lvert{A \cup B}\rvert=100-18=82\) because  \(18\) students out of  \(100\) solved neither of the two questions. Hence, the number of students who solved both a and b can be calculated as follows:
+     \[\begin{aligned} \lvert{A \cap B}\rvert &= \lvert{A}\rvert+\lvert{B}\rvert-\lvert{A \cup B}\rvert \\ &= 66+54-82 \\ &= 38. \end{aligned} \]
+    Thus, the number of students who solved only a, or equivalently, who solved a but did not solve b is
+     \[\begin{aligned} \lvert{A \setminus B}\rvert &= \lvert{A}\rvert-\lvert{A \cap B}\rvert \\ &= 66-38 \\ &= 28. \end{aligned} \]
+     
+     \item Person "A" says the truth 60\% of the time, and person "B" does so 90\% of the time. In what percentage of cases are they likely to contradict each other in stating the same fact?
+     
+     \begin{itemize}
+         \item 42\%
+         \item 54\%
+         \item 60\%
+         \item 36\%
+     \end{itemize}
+     
+     Answer: 42\%
+     
+     when they both say true the probability is 60*90/100=54;
+
+    When the both say false at same time is 40*10/100=4;
+    So the say always the same fact is 54+4=58\%;    
+    So the percentage of cases that they contradict each other is 100-58=42\%
+     
+\end{enumerate}
+
+\end{document}
