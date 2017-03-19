@@ -3,4 +3,6 @@
     <string name="play_button">Play!</string>
     <string name="start_quiz">Start Quiz!</string>
     <string name="sumit">Submit</string>
+    <string name="correct_toast">Correct!</string>
+    <string name="incorrect_toast">Incorrect.</string>
 </resources>

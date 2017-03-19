@@ -10,6 +10,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import ca.sfu.g15.accelmath.database.Database;
@@ -23,6 +25,8 @@ public class LessonFragment extends Fragment {
 
     private int mUnitIndex;
     private int mChapterIndex;
+
+    private Database.Unit.Chapter mChapter;
 
     private TextView mLessonNameTextView;
     private MathView mLessonMathView;
@@ -52,9 +56,9 @@ public class LessonFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_lesson, container, false);
 
         List<Database.Unit> units = DatabaseHandler.get(getContext()).getUnits();
-        Database.Unit.Chapter chapter = units.get(mUnitIndex).chapters.get(mChapterIndex);
-        String lessonTopic = chapter.topic;
-        String lesson = chapter.lesson;
+        mChapter = units.get(mUnitIndex).chapters.get(mChapterIndex);
+        String lessonTopic = mChapter.topic;
+        String lesson = mChapter.lesson;
 
         mLessonNameTextView = (TextView) view.findViewById(R.id.lesson_name_text_view);
         mLessonNameTextView.setText(lessonTopic);
@@ -67,11 +71,33 @@ public class LessonFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 //TODO
-                Intent intent = QuestionActivity.newIntent(getActivity(), mUnitIndex, mChapterIndex, new int[] {0}, 0);
+                Intent intent = QuestionActivity.newIntent(getActivity(), mUnitIndex, mChapterIndex,
+                        generateQuestionsIndices(), 0, 0);
                 startActivity(intent);
             }
         });
 
         return view;
+    }
+
+    private int[] generateQuestionsIndices() {
+
+        //Get the number of questions for current lesson
+        int size = mChapter.questions.size();
+
+        //Create a list of all possibl indices and shuffle it
+        List<Integer> indices = new ArrayList<>();
+        for (int i = 0; i < size; i++) {
+            indices.add(i);
+        }
+        Collections.shuffle(indices);
+
+        //Copy list values to an array
+        int [] array = new int[size];
+        for (int i = 0; i < size; i++) {
+            array[i] = indices.get(i);
+        }
+
+        return array;
     }
 }
