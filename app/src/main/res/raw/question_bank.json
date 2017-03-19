@@ -50,61 +50,61 @@
             {
               "question": "Find the value of $$\\lim_{x \\to 3}(x^3 - 9)$$",
               "options": [
-                "16",
-                "17",
-                "18",
-                "19"
+                "A.12",
+                "B.14",
+                "C.16",
+                "D.18"
               ],
-              "answer": "18"
+              "answer": "D.18"
             },
             {
               "question": "Which is true of n? $$\\lim_{x \\to 0}\\frac{x^5}{x^n} = 1$$",
               "options": [
-                "x < 5",
-                "x = 5",
-                "x > 5"
+                "A.x < 5",
+                "B.x = 5",
+                "C.x > 5"
               ],
-              "answer": "x = 5"
+              "answer": "B.x = 5"
             },
             {
               "question": "When \\(x\\) approaches 10, what does the value of $$\\lim_{x \\to 10}\\frac{x^2-4x+4}{\\left(x-2\\right)^2}$$?",
               "options": [
-                "undefined",
-                "\\(\\infty\\)",
-                "0",
-                "1"
+                "A.undefined",
+                "B.inf",
+                "C.0",
+                "D.1"
               ],
               "answer": "1"
             },
             {
               "question": "Evaluate $$\\lim_{x \\to -5}\\frac{x^2 -25}{x+5}$$",
               "options": [
-                "-9",
-                "-10",
-                "-11",
-                "-12"
+                "A.-5",
+                "B.-10",
+                "C.-15",
+                "D.-25"
               ],
-              "answer": "-10"
+              "answer": "B.-10"
             },
             {
               "question": "Evaluate $$\\lim_{t \\to 2}\\frac{t^2+3t-4}{t^2-2}$$",
               "options": [
-                "\\frac56",
-                "2",
-                "\\frac74",
-                "3"
+                "A.5/6",
+                "B.2",
+                "C.7/4",
+                "D.3"
               ],
-              "answer": "\\frac74"
+              "answer": "C.7/4"
             },
             {
               "question": "Evaluate $$\\lim_{x \\to 0}\\frac{x^2-3x+2}{x^3-2x}$$",
               "options": [
-                "2",
-                "-\\(infty\\)",
-                "-2",
-                "\\(\\infty\\)"
+                "A.2",
+                "B.-inf",
+                "C.-2",
+                "D.inf"
               ],
-              "answer": "-\\(infty\\)"
+              "answer": "B.-inf"
             }
           ]
         },
@@ -116,60 +116,60 @@
             {
               "question": "Let $$f(x) = 2x^3 + 4x^2 - 5x + 7$$ What is the value of \\(f'(2)\\)?",
               "options": [
-                "34",
-                "35",
-                "36",
-                "37"
+                "A.25",
+                "B.35",
+                "C.45",
+                "D.55"
               ],
-              "answer": "35"
+              "answer": "B.35"
             },
             {
               "question": "Let n be a real number and $$f(x) = x^n + x^(-n)$$ What is the value of \\(f'(1)\\)?",
               "options": [
-                "0",
-                "1",
-                "-1",
-                "undefined"
+                "A.0",
+                "B.1",
+                "C.-1",
+                "D.undefined"
               ],
-              "answer": "0"
+              "answer": "A.0"
             },
             {
               "question": "If \\(f'(x)\\) = \\(g'(x)\\) for all real numbers \\(x\\) then \\(f(x)\\) = \\(g(x)\\) for all real numbers \\(x\\). True or False?",
               "options": [
-                "True",
-                "False"
+                "A.True",
+                "B.False"
               ],
-              "answer": "False"
+              "answer": "B.False"
             },
             {
               "question": "What is the value of $$\\lim_{h \\to 0}\\frac{(5+h)^2 - 5^2}{h}?$$",
               "options": [
-                "8",
-                "9",
-                "10",
-                "11"
+                "A.0",
+                "B.5",
+                "C.10",
+                "D.15"
               ],
-              "answer": "10"
+              "answer": "C.10"
             },
             {
               "question": "Let $$f(x) = \\frac{x^7 + x}{x^4}$$ What is the value of \\(f'(1)\\)?",
               "options": [
-                "-2",
-                "-1",
-                "0",
-                "1"
+                "A.-2",
+                "B.-1",
+                "C.0",
+                "D.1"
               ],
-              "answer": "0"
+              "answer": "C.0"
             },
             {
               "question": "If \\(f(x)\\) and \\(g(x)\\) are linear function such that \\(f'(2) = 8\\) and \\(g'(3) = 6\\), what is the value of \\(f'(5) + f'(6)\\)?",
               "options": [
-                "11",
-                "12",
-                "13",
-                "14"
+                "A.6",
+                "B.8",
+                "C.12",
+                "D.14"
               ],
-              "answer": "14"
+              "answer": "D.14"
             }
           ]
         },
@@ -181,62 +181,62 @@
             {
               "question": "If \\(\\int_0^1 f(x)\\, dx = 1\\), what is the value of $$\\int_0^1 -2 f(x)\\, dx ?$$",
               "options": [
-                "-2",
-                "-1",
-                "0",
-                "1"
+                "A.-2",
+                "B.-1",
+                "C.0",
+                "D.1"
               ],
-              "answer": "2"
+              "answer": "A.-2"
             },
             {
               "question": "Suppose \\(\\int_1^2 f(x)\\, dx = 3\\) and \\(\\int_2^3 f(x)\\, dx = 5\\). Find the correct value of $$\\int_0^1 2 f(x) \\, dx$$",
               "options": [
-                "5",
-                "6",
-                "7",
-                "8"
+                "A.2",
+                "B.4",
+                "C.6",
+                "D.8"
               ],
-              "answer": "8"
+              "answer": "D.8"
             },
             {
               "question": "Let \\(\\int_0^1 f(x)\\, dx = 2\\) and  \\(\\int_0^1 g(x)\\, dx = 3\\). Choose the correct answer for $$\\int_0^1 \\left(5f(x) + 7g(x)\\right)\\, dx$$" ,
               "options": [
-                "28",
-                "29",
-                "30",
-                "31"
+                "A.21",
+                "B.25",
+                "C.27",
+                "D.31"
               ],
-              "answer": "31"
+              "answer": "D.31"
             },
             {
               "question": "Evaluate $$\\int_0^1 (3x^2 + 2x + 5) \\, dx$$",
               "options": [
-                "5",
-                "6",
-                "7",
-                "8"
+                "A.3",
+                "B.5",
+                "C.7",
+                "D.9"
               ],
-              "answer": "7"
+              "answer": "C.7"
             },
             {
               "question": "If $$\\int_{0}^{K} x dx =8$$. Assume \\(K\\) > 0, what is the value of \\(K\\)?",
               "options": [
-                "2",
-                "4",
-                "6",
-                "8"
+                "A.2",
+                "B.4",
+                "C.6",
+                "D.8"
               ],
-              "answer": "4"
+              "answer": "B.4"
             },
             {
               "question": "Let \\(\\int_0^{5} f(x)\\, dx = 10\\) and  \\(\\int_0^{2} f(x)\\, dx = 5\\). Find $$\\(\\int_2^{3} f(x)\\, dx\\)",
               "options": [
-                "3",
-                "5",
-                "7",
-                "9"
+                "A.3",
+                "B.5",
+                "C.7",
+                "D.9"
               ],
-              "answer": "5"
+              "answer": "B.5"
             }
           ]
         }
