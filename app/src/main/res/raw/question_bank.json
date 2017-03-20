@@ -224,7 +224,7 @@
       ]
     },
     {
-      "unitName": "Calculus I",
+      "unitName": "Calculus I&II",
       "chapters": [
         {
           "topic": "Limits of Functions",
@@ -428,7 +428,7 @@
       "chapters": [
         {
           "topic": "Determinant Computations",
-          "lesson": "",
+          "lesson": "In linear algebra, the determinant is a useful value that can be computed from the elements of a square matrix. The determinant of a matrix A is denoted det(A), detA , or |A|. It can be viewed as the scaling factor of the transformation described by the matrix.\nIn the case of a 2 × 2 matrix, the specific formula for the determinant: $$ |A| = \\begin{vmatrix} a&b\\\\c&d \\end{vmatrix} = ad-bc. $$ Each determinant of a 2 × 2 matrix in this equation is called a \"minor\" of the matrix A. The same sort of procedure can be used to find the determinant of a 4 × 4 matrix, the determinant of a 5 × 5 matrix, and so forth.\nDeterminants occur throughout mathematics. For example, a matrix is often used to represent the coefficients in a system of linear equations, and the determinant can be used to solve those equations, although more efficient techniques are actually used, some of which are determinant-revealing and consist of computationally effective ways of computing the determinant itself. The use of determinants in calculus includes the Jacobian determinant in the change of variables rule for integrals of functions of several variables. Determinants are also used to define the characteristic polynomial of a matrix, which is essential for eigenvalue problems in linear algebra. In analytical geometry, determinants express the signed n-dimensional volumes of n-dimensional parallelepipeds. Sometimes, determinants are used merely as a compact notation for expressions that would otherwise be unwieldy to write down.\nWhen the entries of the matrix are taken from a field (like the real or complex numbers), it can be proven that any matrix has a unique inverse if and only if its determinant is nonzero. Various other theorems can be proved as well, including that the determinant of a product of matrices is always equal to the product of determinants; and, the determinant of a Hermitian matrix is always real. \n Sources: https://en.wikipedia.org/wiki/Determinant",
           "questions": [
             {
               "question": "Compute the determinant of the following matrix $$A = \\left( \\begin{bmatrix} 3&5\\\\ -2& 4\\end{bmatrix} \\right)$$",
@@ -498,7 +498,7 @@
         },
         {
           "topic": "Matrix Operations",
-          "lesson": "",
+          "lesson": "In mathematics, a matrix (plural matrices) is a rectangular array of numbers, symbols, or expressions, arranged in rows and columns.For example, the dimensions of the matrix below are 2 × 3 (read \"two by three\"), because there are two rows and three columns:\n $$ \\begin{bmatrix}1&9&-13\\\\20&5&-6\\end{bmatrix} $$.\nThe individual items in an m × n matrix A, often denoted by ai,j, where max i = m and max j = n, are called its elements or entries. Provided that they have the same size (each matrix has the same number of rows and the same number of columns as the other), two matrices can be added or subtracted element by element (see Conformable matrix). The rule for matrix multiplication, however, is that two matrices can be multiplied only when the number of columns in the first equals the number of rows in the second (i.e., the inner dimensions are the same, n for Am,n × Bn,p). Any matrix can be multiplied element-wise by a scalar from its associated field. A major application of matrices is to represent linear transformations, that is, generalizations of linear functions such as f(x) = 4x. For example, the rotation of vectors in three-dimensional space is a linear transformation, which can be represented by a rotation matrix R: if v is a column vector (a matrix with only one column) describing the position of a point in space, the product Rv is a column vector describing the position of that point after a rotation. The product of two transformation matrices is a matrix that represents the composition of two linear transformations. Another application of matrices is in the solution of systems of linear equations. If the matrix is square, it is possible to deduce some of its properties by computing its determinant. For example, a square matrix has an inverse if and only if its determinant is not zero. Insight into the geometry of a linear transformation is obtainable (along with other information) from the matrix's eigenvalues and eigenvectors.\n Sources: https://en.wikipedia.org/wiki/Matrix_(mathematics)",
           "questions": [
             {
               "question": "Suppose A is a 3 by 4 matrix and B is a 4 by 2 matrix.Describe the dimension of AB.",
@@ -563,7 +563,7 @@
         },
         {
           "topic": "Vectors and Linear Equation",
-          "lesson": "",
+          "lesson": "A linear equation is an algebraic equation in which each term is either a constant or the product of a constant and (the first power of) a single variable (however, different variables may occur in different terms). A simple example of a linear equation with only one variable, x, may be written in the form: ax + b = 0, where a and b are constants and a ≠ 0. The constants may be numbers, parameters, or even non-linear functions of parameters, and the distinction between variables and parameters may depend on the problem (for an example, see linear regression).\nLinear equations can have one or more variables. An example of a linear equation with three variables, x, y, and z, is given by: ax + by + cz + d = 0, where a, b, c, and d are constants and a, b, and c are non-zero. Linear equations occur frequently in most subareas of mathematics and especially in applied mathematics. While they arise quite naturally when modeling many phenomena, they are particularly useful since many non-linear equations may be reduced to linear equations by assuming that quantities of interest vary to only a small extent from some \"background\" state. An equation is linear if the sum of the exponents of the variables of each term is one.\nEquations with exponents greater than one are non-linear. An example of a non-linear equation of two variables is axy + b = 0, where a and b are constants and a ≠ 0. It has two variables, x and y, and is non-linear because the sum of the exponents of the variables in the first term, axy, is two.\nThis article considers the case of a single equation for which one searches the real solutions. All its content applies for complex solutions and, more generally for linear equations with coefficients and solutions in any field. \n Sources: https://en.wikipedia.org/wiki/Linear_equation",
           "questions": [
             {
               "question": "Compute the dot product of u . v when \\( u = (3, 1, 4) \\) and \\( v = (2, 2, 4) \\)",
