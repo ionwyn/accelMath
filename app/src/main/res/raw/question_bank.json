@@ -410,7 +410,7 @@
               "answer": "4"
             },
             {
-              "question": "Let \\(\\int_0^{5} f(x)\\, dx = 10\\) and  \\(\\int_0^{2} f(x)\\, dx = 5\\). Find $$\\(\\int_2^{3} f(x)\\, dx\\)",
+              "question": "Let \\(\\int_0^{5} f(x)\\, dx = 10\\) and  \\(\\int_0^{2} f(x)\\, dx = 5\\). Find \\( \\int_2^{3} f(x)\\, dx \\)",
               "options": [
                 "3",
                 "5",
