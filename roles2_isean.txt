@@ -19,5 +19,3 @@ I, Ionwyn, have been assigned to the role of:
                       Jason: Calculus I and Calculus II.
               Fixing rendering errors alongside Jason.
               Completion of JSON database alongside Eric, Jagrajan, and Jason.
-
-What other team members have done:
