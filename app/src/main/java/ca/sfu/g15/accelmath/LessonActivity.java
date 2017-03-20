@@ -21,7 +21,7 @@ public class LessonActivity extends AppCompatActivity{
 
     public static Intent newIntent(Context packageContext, int unitIndex, int chapterIndex) {
         Intent intent = new Intent(packageContext, LessonActivity.class);
-        intent.putExtra(EXTRA_UNIT_INDEX, unitI ndex);
+        intent.putExtra(EXTRA_UNIT_INDEX, unitIndex);
         intent.putExtra(EXTRA_CHAPTER_INDEX, chapterIndex);
         return intent;
     }
