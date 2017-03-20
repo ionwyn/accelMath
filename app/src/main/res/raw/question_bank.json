@@ -431,7 +431,7 @@
           "lesson": "",
           "questions": [
             {
-              "question": "Compute the determinant of the following matrix $$A = \\left( \\begin{bmatrix} 3&5\\\\ -2& 4\\end{bmatrix} \\right)",
+              "question": "Compute the determinant of the following matrix $$A = \\left( \\begin{bmatrix} 3&5\\\\ -2& 4\\end{bmatrix} \\right)$$",
               "options": [
                 "8",
                 "17",
@@ -497,66 +497,67 @@
           ]
         },
         {
-          "topic": "Matrix",
-          "lesson": "The derivative of a function of a real variable measures the sensitivity to change of the function value with respect to a change in its argument (input value). Derivatives are a fundamental tool of calculus. For example, the derivative of the position of a moving object with respect to time is the object's velocity: this measures how quickly the position of the object changes when time advances.\nThe derivative of a function of a single variable at a chosen input value, when it exists, is the slope of the tangent line to the graph of the function at that point. The tangent line is the best linear approximation of the function near that input value. For this reason, the derivative is often described as the \"instantaneous rate of change\", the ratio of the instantaneous change in the dependent variable to that of the independent variable.\nDerivatives may be generalized to functions of several real variables. In this generalization, the derivative is reinterpreted as a linear transformation whose graph is (after an appropriate translation) the best linear approximation to the graph of the original function. The Jacobian matrix is the matrix that represents this linear transformation with respect to the basis given by the choice of independent and dependent variables. It can be calculated in terms of the partial derivatives with respect to the independent variables. For a real-valued function of several variables, the Jacobian matrix reduces to the gradient vector.\nSources: https://en.wikipedia.org/wiki/Derivative",
+          "topic": "Matrix Operations",
+          "lesson": "",
           "questions": [
             {
-              "question": "Let $$f(x) = 2x^3 + 4x^2 - 5x + 7$$ What is the value of \\(f'(2)\\)?",
+              "question": "Suppose A is a 3 by 4 matrix and B is a 4 by 2 matrix.Describe the dimension of AB.",
               "options": [
-                "25",
-                "35",
-                "45",
-                "55"
+                "3x4",
+                "4x2",
+                "3x2",
+                "4x4"
               ],
-              "answer": "35"
+              "answer": "3x2"
             },
             {
-              "question": "Let n be a real number and $$f(x) = x^n + x^(-n)$$ What is the value of \\(f'(1)\\)?",
+              "question": "The following is a 5 by 4 matrix $$A = \\left( \\begin{bmatrix} 5 & 4& 2 & 1 \\\\ 0 & 2& 0 & 1\\\\ 7 & 5& 8 & 2\\\\ 4 & 6& 0 & 0\\\\ 8 & 9& 6 & 5 \\end{bmatrix} \\right)$$ What is the second column of A?",
               "options": [
-                "0",
-                "1",
-                "-1",
+                "5 0 7 4 8",
+                "4 2 5 6 9",
+                "2 0 8 0 6",
+                "1 1 2 0 5"
+              ],
+              "answer": "4 2 5 6 9"
+            },
+            {
+              "question": "The following are 2 by 2 matrices $$A = \\left( \\begin{bmatrix} 3&2\\\\ 6&1 \\end{bmatrix} \\right)$$ \n $$B = \\left( \\begin{bmatrix} 7&1\\\\ 4&0 \\end{bmatrix} \\right)$$ Compute the sum of A + B.",
+              "options": [
+                "10 3 | 10 1",
+                "12 | 11",
                 "undefined"
               ],
-              "answer": "0"
+              "answer": "10 3 | 10 1"
             },
             {
-              "question": "If \\(f'(x)\\) = \\(g'(x)\\) for all real numbers \\(x\\) then \\(f(x)\\) = \\(g(x)\\) for all real numbers \\(x\\). True or False?",
+              "question": "The following are 2 by 2 matrices $$A = \\left( \\begin{bmatrix} 3&2\\\\ 6&1 \\end{bmatrix} \\right)$$ \n $$B = \\left( \\begin{bmatrix} 7&1\\\\ 4&0 \\end{bmatrix} \\right)$$ Compute the product of AB.",
               "options": [
-                "True",
-                "False"
+                "21 2 | 24 0",
+                "29 3 | 46 6",
+                "10 3 | 10 1",
+                "undefined"
               ],
-              "answer": "False"
+              "answer": "29 3 |46 6"
             },
             {
-              "question": "What is the value of $$\\lim_{h \\to 0}\\frac{(5+h)^2 - 5^2}{h}?$$",
+              "question": "Consider the following matrices $$A = \\left( \\begin{bmatrix} 5 & 4& 2 & 1 \\\\ 0 & 2& 0 & 1\\\\ 7 & 5& 8 & 2\\\\ 4 & 6& 0 & 0\\\\ 8 & 9& 6 & 5 \\end{bmatrix} \\right)$$ \n $$B = \\left( \\begin{bmatrix} 12\\\\ 11 \\end{bmatrix} \\right)$$ Compute the product of AB.",
               "options": [
-                "0",
-                "5",
-                "10",
-                "15"
+                "3 100 | 25 17",
+                "45 83 | 98 77",
+                "10 34 | 11 24",
+                "undefined"
               ],
-              "answer": "10"
+              "answer": "undefined"
             },
             {
-              "question": "Let $$f(x) = \\frac{x^7 + x}{x^4}$$ What is the value of \\(f'(1)\\)?",
+              "question": "Suppose A is a 3 by 4 matrix and B is a 3 by 4 matrix. Describe the dimension of AB.",
               "options": [
-                "-2",
-                "-1",
-                "0",
-                "1"
+                "3x4",
+                "4x2",
+                "3x2",
+                "undefined"
               ],
-              "answer": "0"
-            },
-            {
-              "question": "If \\(f(x)\\) and \\(g(x)\\) are linear function such that \\(f'(2) = 8\\) and \\(g'(3) = 6\\), what is the value of \\(f'(5) + f'(6)\\)?",
-              "options": [
-                "6",
-                "8",
-                "12",
-                "14"
-              ],
-              "answer": "14"
+              "answer": "undefined"
             }
           ]
         },
