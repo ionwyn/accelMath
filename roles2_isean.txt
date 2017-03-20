@@ -1,0 +1,23 @@
+In this Iteration,
+
+I, Ionwyn, have been assigned to the role of:
+
+        Scrum Master:
+              Propose team meeting schedule throughout the second Iteration.
+              Manages steps in iteration.
+
+        Front-end Development:
+              User Interface (UI) and User Experience (UX) design:
+                      Insuring long equations have automatic line-breaks.
+                      Insuring pictures do not overlap.
+                      Redesigned logo.
+
+        Back-end Development:
+              Question design in LaTeX format alongside Eric and Jason.
+                      Ionwyn: Discrete Mathematics.
+                      Eric: Linear Algebra.
+                      Jason: Calculus I and Calculus II.
+              Fixing rendering errors alongside Jason.
+              Completion of JSON database alongside Eric, Jagrajan, and Jason.
+
+What other team members have done:
