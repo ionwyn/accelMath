@@ -2,6 +2,7 @@ package ca.sfu.g15.accelmath;
 
 import android.app.ActionBar;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -39,6 +40,7 @@ public class QuestionFragment extends Fragment implements View.OnClickListener {
 
     private TextView mStatusTextView;
     private MathView mQuestionMathView;
+
     private LinearLayout mButtonContainer;
 
     /**
@@ -70,6 +72,8 @@ public class QuestionFragment extends Fragment implements View.OnClickListener {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+
+
         mUnitIndex = getArguments().getInt(ARG_UNIT_INDEX);
         mChapterIndex = getArguments().getInt(ARG_CHAPTER_INDEX);
         mQuestionIndices = getArguments().getIntArray(ARG_QUESTION_INDICES);
@@ -95,6 +99,12 @@ public class QuestionFragment extends Fragment implements View.OnClickListener {
 
         //Set the MathView text to the current question
         mQuestionMathView = (MathView) view.findViewById(R.id.question_math_view);
+        mQuestionMathView.config(
+                "MathJax.Hub.Config({\n"+
+                        "  CommonHTML: { linebreaks: { automatic: true } },\n"+
+                        "  \"HTML-CSS\": { linebreaks: { automatic: true } },\n"+
+                        "         SVG: { linebreaks: { automatic: true } }\n"+
+                        "});");
         mQuestionMathView.setText(mQuestion.question);
 
         mButtonContainer = (LinearLayout) view.findViewById(R.id.button_container);
@@ -118,11 +128,13 @@ public class QuestionFragment extends Fragment implements View.OnClickListener {
     public void onClick(View v) {
         Button button = (Button) v;
         String response = button.getText().toString();
+        MediaPlayer mp = MediaPlayer.create(getActivity().getApplicationContext(), R.raw.ping);
 
         //Check if answer is correct
         int message;
         boolean correct = false;
         if (response.equals(mQuestion.answer)) {
+            mp.start();
             message = R.string.correct_toast;
             correct = true;
         } else {

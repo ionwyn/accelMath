@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.os.*;
 
 import java.util.List;
 
@@ -22,6 +23,8 @@ public class UnitListFragment extends Fragment{
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+
+
         View view = inflater.inflate(R.layout.fragment_unit_list, container, false);
 
         mUnitRecyclerView = (RecyclerView) view.findViewById(R.id.unit_recycler_view);
