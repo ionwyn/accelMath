@@ -562,68 +562,66 @@
           ]
         },
         {
-          "topic": "Integrals",
-          "lesson": "In mathematics, an integral assigns numbers to functions in a way that can describe displacement, area, volume, and other concepts that arise by combining infinitesimal data. Integration is one of the two main operations of calculus, with its inverse, differentiation, being the other. Given a function f of a real variable x and an interval [a, b] of the real line, the definite integral\n$$\\int _{a}^{b}\\!f(x)\\,dx$$\nis defined informally as the signed area of the region in the xy-plane that is bounded by the graph of f, the x-axis and the vertical lines x = a and x = b. The area above the x-axis adds to the total and that below the x-axis subtracts from the total.\nRoughly speaking, the operation of integration is the reverse of differentiation. For this reason, the term integral may also refer to the related notion of the antiderivative, a function F whose derivative is the given function f. In this case, it is called an indefinite integral and is written:\n$$F(x)=\\int f(x)\\,dx.$$\nThe integrals discussed in this article are those termed definite integrals. It is the fundamental theorem of calculus that connects differentiation with the definite integral: if f is a continuous real-valued function defined on a closed interval [a, b], then, once an antiderivative F of f is known, the definite integral of f over that interval is given by\n$$\\int _{a}^{b}\\!f(x)\\,dx=F(b)-F(a).$$\nThe principles of integration were formulated independently by Isaac Newton and Gottfried Leibniz in the late 17th century, who thought of the integral as an infinite sum of rectangles of infinitesimal width. A rigorous mathematical definition of the integral was given by Bernhard Riemann. It is based on a limiting procedure which approximates the area of a curvilinear region by breaking the region into thin vertical slabs. Beginning in the nineteenth century, more sophisticated notions of integrals began to appear, where the type of the function as well as the domain over which the integration is performed has been generalised. A line integral is defined for functions of two or three variables, and the interval of integration [a, b] is replaced by a certain curve connecting two points on the plane or in the space. In a surface integral, the curve is replaced by a piece of a surface in the three-dimensional space.\nSources: https://en.wikipedia.org/wiki/Integral",
+          "topic": "Vectors and Linear Equation",
+          "lesson": "",
           "questions": [
             {
-              "question": "If \\(\\int_0^1 f(x)\\, dx = 1\\), what is the value of $$\\int_0^1 -2 f(x)\\, dx ?$$",
+              "question": "Compute the dot product of u . v \\( u = (3, 1, 4) and v = (2, 2, 4) \\)",
               "options": [
-                "-2",
-                "-1",
-                "0",
-                "1"
+                "(5, 3, 8)",
+                "(6, 2, 12)",
+                "(8, 8)",
+                "(12, 16)"
               ],
-              "answer": "-2"
+              "answer": "(6, 2, 12)"
             },
             {
-              "question": "Suppose \\(\\int_1^2 f(x)\\, dx = 3\\) and \\(\\int_2^3 f(x)\\, dx = 5\\). Find the correct value of $$\\int_0^1 2 f(x) \\, dx$$",
+              "question": "The set of all points such that \\( x = x0 + tv \\), represents the line through x0 that is parallel to v and the varaible t is called a parameter. \n Question: what if x0 = 0?",
               "options": [
-                "2",
-                "4",
-                "6",
-                "8"
+                "plane including origin",
+                "a point at the origin ",
+                "line passing through the origin"
               ],
-              "answer": "8"
+              "answer": "line passing through the origin"
             },
             {
-              "question": "Let \\(\\int_0^1 f(x)\\, dx = 2\\) and  \\(\\int_0^1 g(x)\\, dx = 3\\). Choose the correct answer for $$\\int_0^1 \\left(5f(x) + 7g(x)\\right)\\, dx$$" ,
+              "question": "Match the properties of vectors \(( a) u + v = v + u \\) \n \\( b) (u + v) + w = u + (v + w) \\) \n \\( c) u + 0 = u \\) \n \\( 1) zero identity \\) \n \\( 2) associative law \\) \n \\( 3) commutative law \\)" ,
               "options": [
-                "21",
-                "25",
-                "27",
-                "31"
+                "a) = 2) ,b) = 1), c) = 3)",
+                "a) = 3), b) = 2), c) = 1)",
+                "a) = 3), b) = 1), c) = 2)",
+                "a) = 2), b) = 3), c) = 1)"
               ],
-              "answer": "31"
+              "answer": "a) = 3), b) = 1), c) = 2)"
             },
             {
-              "question": "Evaluate $$\\int_0^1 (3x^2 + 2x + 5) \\, dx$$",
+              "question": "Find the augmented matrix for the linear system \\( x1 = 1 \\) \n \\( x2 = 2 \\) \n \\( x3 = 3 \\)",
               "options": [
-                "3",
-                "5",
-                "7",
-                "9"
+                "1 0 0 1 | 0 1 0 2 | 0 0 1 3",
+                "1 0 0 | 0 2 0 | 0 0 3",
+                "1 0 0 | 0 1 0 | 0 0 1"
               ],
-              "answer": "7"
+              "answer": "1 0 0 1 | 0 1 0 2 | 0 0 1 3"
             },
             {
-              "question": "If $$\\int_{0}^{K} x dx =8$$. Assume \\(K\\) > 0, what is the value of \\(K\\)?",
+              "question": "Fill in the blank. If a linear system has [  ] solution, its called [ ].",
               "options": [
-                "2",
-                "4",
-                "6",
-                "8"
+                "zero, consistent",
+                "at least one, consistent",
+                "at least one, inconsistent",
+                "infinite, in consistent"
               ],
-              "answer": "4"
+              "answer": "at least one, inconsistent"
             },
             {
-              "question": "Let \\(\\int_0^{5} f(x)\\, dx = 10\\) and  \\(\\int_0^{2} f(x)\\, dx = 5\\). Find $$\\(\\int_2^{3} f(x)\\, dx\\)",
+              "question": "What does a linear equation in (a) $$R^{2}$$ and (b) $$R^{3}$$ represents?",
               "options": [
-                "3",
-                "5",
-                "7",
-                "9"
+                "plane, line",
+                "line, plane",
+                "dot, line",
+                "line, dot"
               ],
-              "answer": "5"
+              "answer": "line, plane"
             }
           ]
         }
