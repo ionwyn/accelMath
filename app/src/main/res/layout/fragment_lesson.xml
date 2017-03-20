@@ -37,7 +37,11 @@
                 android:id="@+id/start_quiz_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/start_quiz"/>
+                android:text="@string/start_quiz"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:alpha="0.75" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
