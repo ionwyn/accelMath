@@ -6,10 +6,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.os.CountDownTimer;
+import android.widget.ImageButton;
 
 public class MenuActivity extends AppCompatActivity {
 
-    private Button mPlayButton;
+    private ImageButton mPlayButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +26,7 @@ public class MenuActivity extends AppCompatActivity {
             public void onFinish(){
                 //set the new Content of your activity
                 MenuActivity.this.setContentView(R.layout.activity_menu);
-                mPlayButton = (Button) findViewById(R.id.play_button);
+                mPlayButton = (ImageButton) findViewById(R.id.play_button);
                 mPlayButton.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
