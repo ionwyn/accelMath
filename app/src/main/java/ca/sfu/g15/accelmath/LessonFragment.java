@@ -64,6 +64,12 @@ public class LessonFragment extends Fragment {
         mLessonNameTextView.setText(lessonTopic);
 
         mLessonMathView = (MathView) view.findViewById(R.id.lesson_math_view);
+        mLessonMathView.config(
+                "MathJax.Hub.Config({\n"+
+                        "  CommonHTML: { linebreaks: { automatic: true } },\n"+
+                        "  \"HTML-CSS\": { linebreaks: { automatic: true } },\n"+
+                        "         SVG: { linebreaks: { automatic: true } }\n"+
+                        "});");
         mLessonMathView.setText(lesson);
 
         mStartQuizButton = (Button) view.findViewById(R.id.start_quiz_button);
