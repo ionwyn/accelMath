@@ -566,7 +566,7 @@
           "lesson": "",
           "questions": [
             {
-              "question": "Compute the dot product of u . v \\( u = (3, 1, 4) and v = (2, 2, 4) \\)",
+              "question": "Compute the dot product of u . v when \\( u = (3, 1, 4) \\) and \\( v = (2, 2, 4) \\)",
               "options": [
                 "(5, 3, 8)",
                 "(6, 2, 12)",
@@ -576,7 +576,7 @@
               "answer": "(6, 2, 12)"
             },
             {
-              "question": "The set of all points such that \\( x = x0 + tv \\), represents the line through x0 that is parallel to v and the varaible t is called a parameter. \n Question: what if x0 = 0?",
+              "question": "The set of all points such that \\( x = x0 + tv \\), represents the line through x0 that is parallel to v and the varaible t is called a parameter. \n Question: what if \\( x0 = 0 \\)?",
               "options": [
                 "plane including origin",
                 "a point at the origin ",
@@ -585,7 +585,7 @@
               "answer": "line passing through the origin"
             },
             {
-              "question": "Match the properties of vectors \(( a) u + v = v + u \\) \n \\( b) (u + v) + w = u + (v + w) \\) \n \\( c) u + 0 = u \\) \n \\( 1) zero identity \\) \n \\( 2) associative law \\) \n \\( 3) commutative law \\)" ,
+              "question": "Match the properties of vectors \\( a) u + v = v + u \\) \n \\( b) (u + v) + w = u + (v + w) \\) \n \\( c) u + 0 = u \\) \n1) zero identity \n2) associative law \n3) commutative law" ,
               "options": [
                 "a) = 2) ,b) = 1), c) = 3)",
                 "a) = 3), b) = 2), c) = 1)",
@@ -595,7 +595,7 @@
               "answer": "a) = 3), b) = 1), c) = 2)"
             },
             {
-              "question": "Find the augmented matrix for the linear system \\( x1 = 1 \\) \n \\( x2 = 2 \\) \n \\( x3 = 3 \\)",
+              "question": "Find the augmented matrix for the linear system \\( x1 = 1 \\), \\( x2 = 2 \\), \\( x3 = 3 \\)",
               "options": [
                 "1 0 0 1 | 0 1 0 2 | 0 0 1 3",
                 "1 0 0 | 0 2 0 | 0 0 3",
@@ -614,7 +614,7 @@
               "answer": "at least one, inconsistent"
             },
             {
-              "question": "What does a linear equation in (a) $$R^{2}$$ and (b) $$R^{3}$$ represents?",
+              "question": "What does a linear equation in (a) \\( R^{2} \\) and (b) \\( R^{3} \\) represents?",
               "options": [
                 "plane, line",
                 "line, plane",
