@@ -40,6 +40,7 @@ public class QuestionFragment extends Fragment implements View.OnClickListener {
 
     private TextView mStatusTextView;
     private MathView mQuestionMathView;
+
     private LinearLayout mButtonContainer;
 
     /**
@@ -98,6 +99,12 @@ public class QuestionFragment extends Fragment implements View.OnClickListener {
 
         //Set the MathView text to the current question
         mQuestionMathView = (MathView) view.findViewById(R.id.question_math_view);
+        mQuestionMathView.config(
+                "MathJax.Hub.Config({\n"+
+                        "  CommonHTML: { linebreaks: { automatic: true } },\n"+
+                        "  \"HTML-CSS\": { linebreaks: { automatic: true } },\n"+
+                        "         SVG: { linebreaks: { automatic: true } }\n"+
+                        "});");
         mQuestionMathView.setText(mQuestion.question);
 
         mButtonContainer = (LinearLayout) view.findViewById(R.id.button_container);

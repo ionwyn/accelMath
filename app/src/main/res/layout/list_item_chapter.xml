@@ -37,6 +37,10 @@
         android:rating="3"
         android:layout_below="@id/chapter_name"
         android:orientation="vertical"
+        android:shadowColor="#7000"
+        android:shadowDx="12"
+        android:shadowDy="12"
+        android:shadowRadius="8"
         />
 
 </android.support.constraint.ConstraintLayout>
