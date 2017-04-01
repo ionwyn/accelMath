@@ -14,6 +14,7 @@ import java.util.ArrayList;
 public class ScoresHandler {
 
     private static String FILE_NAME = "scores.json";
+    private static final String SCORES_PREFIX = "scores";
 
     private static ScoresHandler sScoresHandler;
 
@@ -59,7 +60,7 @@ public class ScoresHandler {
     }
 
     private Scores getScoresFromFile (Context context) {
-        File file = new File(context.getFilesDir(), FILE_NAME);
+        File file = new File(context.getFilesDir(), getCurrentFileName(context));
         if (file.exists()) {
             try {
                 FileInputStream inputStream = context.openFileInput(file.getName());
@@ -76,12 +77,18 @@ public class ScoresHandler {
     }
 
     private void updateScoresInFile (Context context) {
-        File file = new File(context.getFilesDir(), FILE_NAME);
+        File file = new File(context.getFilesDir(), getCurrentFileName(context));
+        FileOutputStream outputStream;
         try {
-            FileOutputStream outputStream = context.openFileOutput(file.getName(), Context.MODE_PRIVATE);
+            outputStream = context.openFileOutput(file.getName(), Context.MODE_PRIVATE);
             LoganSquare.serialize(mScores, outputStream);
+            outputStream.close();
         } catch (Exception ex) {
             ex.printStackTrace();
         }
+    }
+
+    private String getCurrentFileName(Context context) {
+        return SCORES_PREFIX + DatabaseHandler.get(context).getCurrentFile();
     }
 }
