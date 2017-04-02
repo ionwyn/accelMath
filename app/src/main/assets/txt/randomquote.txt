@@ -1,0 +1,123 @@
+Lottery: A tax on people who are bad at math.
+These are questions for action, not speculation, which is idle. -- Noam Chomsky
+If you think education is expensive try Ignorance. -- Derek Bok, president of Harvard
+Photons have neither morals nor visas. -- Dave Farber
+Maturity is not a factor of the games we play but the occasions we play them!
+Design a system an idiot can use and only an idiot will want to use it.
+It is much more rewarding to do more with less. -- Donald Knuth
+The windows registry is dead ground which microsoft keeps trying to plant in.
+If you aim the gun at your foot and pull the trigger, it's UNIX's job to ensure reliable delivery of the bullet to where you aimed the gun (in this case, Mr. Foot). (Terry)
+What goes up, must come down. Ask any system administrator.
+The great masses of the people ... will more easily fall victims to a big lie than to a small one. -- Adolf Hitler, "Mein Kampf"
+"A little science estranges a man from God. A lot of science brings him back." -- Francis Bacon
+"There are two major products that come out of Berkeley: LSD and UNIX. We don't believe this to be a coincidence." -- Jeremy Anderson
+"If I had eight hours to chop down a tree, I'd spend seven of them sharpening my axe." -- Abraham Lincoln
+Whereof one cannot speak, thereof one must be silent -- Ludwig Wittgenstein
+"The Pythagorean Theorem employed 24 words, the Lord's Prayer has 66 words, Archimedes Principle has 67words, the 10 Commandments have 179 words, the Gettysburg Address had 286 words, the Declaration of Independence, 1,300 words and finally the European Commission's regulation on the sale of cabbage: 26,911 words."
+"Amateurs hack systems, professionals hack people" -- Bruce Schneier
+"Programming is an art form that fights back" -- Saige on SlashDot
+Majority, n.: That quality that distinguishes a crime from a law.
+He who knows others is wise. He who knows himself is enlightened. -- Lao Tsu
+God grant me the courage not to give up what I think is right, even though I think it is hopeless. -- Admiral Chester W. Nimitz
+"Understanding. A cerebral secretion that enables one having it to know a house from a horse by the roof on the house, It's nature and laws have been exhaustively expounded by Locke, who rode a house, and Kant, who lived in a horse." -- Ambrose Bierce
+There are no physicists in the hottest parts of hell, because the existence of a "hottest part" implies a temperature difference, and any marginally competent physicist would immediately use this to run a heat engine and make some other part of hell comfortably cool.  This is obviously impossible. -- Richard Davisson
+Luck, like a Russian car, generally only works if you push it. -- Regalian, in My Hero (Tom Holt)
+If God had wanted us to vote, he would have provided candidates. -- Dorothy Day
+Good judgment comes from experience.  Unfortunately, the experience usually comes from bad judgment.
+Money is how people with no talent keep score. -- Michael Hart, Brief History of the Internet, 1995
+"Those who do not do politics will be done in by politics." -- French Proverb
+Disraeli was pretty close: actually, there are Lies, Damn lies, Statistics, Benchmarks, and Delivery dates.
+A man is as sane as he is dangerous to his environment
+Focus on the dream, not the competition. -- Nemesis Racing Team motto
+"The whole problem with the world is that fools and fanatics are always so certain of themselves, but wiser people so full of doubts." -- Bertrand Russell
+"When I get a little money, I buy books; and if any is left, I buy food and clothes." -- Erasmus, Opus Epistolarum, 1529
+"Testing can prove the presence of bugs, but not their absence." -- Dykstra
+There are two ways of constructing a software design; One way is to make it so simple that there are obviously no deficiencies, and the other way is to make it so complicated that there are no obvious deficiences. -- C. A. R. Hoare
+Is is always time to do the right thing. -- Martin Luther King
+Solve 90% of the problem as simply as you can, and then remove the other 10% from the problem requirements. -- Marshall Rose
+The universe doesn't always give you what you want. It gives you what you need.
+"If you think technology can solve your security problems, then you don't understand the problems and you don't understand the technology." -- Bruce Schneier, Secrets and Lies
+You know, the mark of intelligence is realizing when you're making the same mistake over and over and over again, and not hitting your head in the wall five hundred times before you understand that it's not a clever thing to do. -- Linus Torvalds
+Common sense is the collection of prejudices acquired by age eighteen. -- Albert Einstein
+If you are out to describe the truth, leave elegance to the tailor. -- Albert Einstein
+Imagination is more important than knowledge. -- Albert Einstein
+"Memory is like gasoline. You use it up when you are running. Of course you get it all back when you reboot..." -- Actual explanation obtained from the Micro$oft help desk.
+In a time of universal deceit, telling the truth is a revolutionary act. -- George Orwell
+The trouble with computers is that they do what you tell them, not what you want. -- D. Cohen
+Until I loved, life had no beauty; I did not know I lived until I had loved. -- Theodor Korner
+So, make a real effort to avoid getting sucked into all the expensive lifestyle habits of typical Americans.  Because if you do that, then people with the money will dictate what you do with your life. --Richard Stallman
+Personally, I'm always ready to learn, although I do not always like being taught. -- Sir Winston Churchill
+"My mother said to me, if you become a soldier, you'll be a general, if you become a monk, you'll end up as the pope. Instead I became a painter and wound up as Picasso." -- Pablo Picasso
+"The people who get on in this world are the people who get up and look for the circumstances they want, and, if they can't find them, make them." -- George Bernard Shaw
+"All men by nature desire to know." -- Aristotle
+A physicist is an atom's way of knowing about atoms.
+Opportunities multiply as they are seized. -- Sun Tzu
+Give a man a fish, and he will eat for a day. Teach him how to fish and he will stop bothering you. -- Unknown
+Unix is simple. It just takes a genius to understand its simplicity.
+Never be afraid to try something new. Remember, amateurs built the ark. Professionals built the Titanic
+"I think we agnostics need a term for a holy war too. I feel all left out." -- George Lebl
+"When he pretends to flee, do not pursue." -- Sun Tzu, The Art of War ("Maneuver", Statement 27)
+"If you continue to think the way you've always thought, then you will continue to get what you always got!"
+"The appeal to force is the abandonment of reason." -- Introduction to Logic, 11th Ed. -- Irving M. Copi & Carl Cohen
+"The fact that an opinion has been widely held is no evidence whatever that is not uterly absurd; indeed, in view of the silliness of the majority of mankind, a wide-spread belief is more likely to be foolish than sensible." -- Bertrans Russell
+There is nothing so useless as doing efficiently that which should not be done at all. -- Peter Drucker
+"No great civilisation likes forests." -- K.F. O'Connor
+We are most probably here for local information-gathering and local-Universe problem-solving in support of the integrity of eternally regenerative Universe. -- R. Buckminster Fuller
+Be master of your petty annoyances and conserve your energies for the big, worthwhile things. It isn't the mountain ahead that wears you out - it's the grain of sand in your shoe.
+"If you're smart, you'll be humble. There always is somebody who hasn't read a book and knows twice as much as you do."	-- David Duchovny in Readers' Digest
+"I believe in true love. But I am easily satisfied." -- Miguel de Icaza
+"If only you could see what I have seen with your eyes"	-- Roy Batty
+"Never argue with idiots, they'll only drag you down to their level and beat you with experience."
+"Biology is the only science in which multiplication means the same thing as division." -- Greg Leblanc
+Whenever you find that you are on the side of the majority, it is time to reform. -- Mark Twain
+"If you don't have a hammer, hack it"
+"when you eliminate the impossible, whatever remains, however improbable, must be the truth." -- Sherlock Holmes
+'The project can be correct, it can be fast, or it can be on time, pick two'
+"the good is the enemy of the best" -- Unknown Proverb (found in reference to protocol design)
+"I never let my schooling get in the way of my education." -- Mark Twain
+"No cause, no God, no abstract idea can justify the mass slaughter of innocents." -- Edward Said
+"Evil will always triumph over good, because good is dumb." -- Dark Helmet, Spaceballs
+"Never give up. Never give up. Never ever give up." -- Winston Churchill
+Originality is undetected plagiarism. -- Dean W. R. Inge
+Procrastination is great. It gives me a lot more time to do things that I'm never going to do.
+If you're not paranoid, you just haven't been paying attention.
+"Until they become conscious they will never rebel, and until after they have rebelled they cannot become conscious."
+Everything should be made as simple as possible, but no simpler. -- Albert Einsteinprogramm
+Now what is history? It is the centuries of systematic explorations of the riddle of death, with a view to overcoming death. That's why people discover mathematical infinity and electromagnetic waves, that's why they write symphonies. -- Boris Pasternak, Doctor Zhivago
+"The only freedom which deserves the name is that of pursuing our own good, in our own way, so long as we do not attempt to deprive others of theirs, or impede their efforts to obtain it." -- John Stuart Mill
+One cannot make an omelette without breaking eggs -- but it is amazing how many eggs one can break without making a decent omelette. -- Professor Charles P. Issawi
+"All men of conscience or prudence ply to windward, to maintain their wars to be defensive." -- Roger Williams
+"I invented the term Object-Oriented, and I can tell you I did not have C++ in mind." -- Alan Kay
+All in favor of losing their rights, please do nothing.
+It took me fifteen years to discover that I had no talent for writing, but I couldn't give it up because by that time I was too famous. -- Robert Benchley
+I see a dark sail on the horizon Set under a dark cloud that hides the sun Bring me my Broadsword and clear understanding
+In my view, those of us who teach science to nonscience majors must continually encourage them to base their beliefs on evidence rather than mere prior preference. -- William H. Ingham (Physicstoday.org)
+The probability that we may fail in the struggle ought not to deter us from the support of a cause we believe to be just. -- Abraham Lincoln
+"We don't like their sound, and guitar music is on the way out." -- Decca Recording Co. rejecting the Beatles, 1962.
+"I never think of the future - it comes soon enough." -- Albert Einstein
+Unix is not "just" an Operating System. Unix is a way of life.
+I am convinced that if we are to get on the right side of the world revolution, we as a nation must undergo a radical revolution of values. We must rapidly begin the shift from a thing-oriented society to a person-oriented society. When machines and computers, profit motives and property rights, are considered more important than people, the giant triplets of racism, extreme materialism, and militarism are incapable of being conquered. -- Martin Luther King
+"Everybody thinks of changing humanity and nobody thinks of changing himself" -- Leo Tolstoy.
+"There is nothing as deceptive as an obvious fact." --Sir Arthur Conan Doyle
+Certainly there are things in life that money can't buy, But it's very funny -- did you ever try buying them without money? -- Ogden Nash
+We may often do as we please -- but we cannot please as we please. -- Bertrand Russell
+"Human beings act intelligently only after they have exhausted the alternatives" -- Abba Eban
+Why live outside the US? Do you want health care or safe food products or democracy or something? They're all overrated. Stay for the excellent cable TV. -- Ian McKellar (GNOME Developer)
+"When there's public debate and mass hysteria, that's when the patches roll in." -- Michael Meeks (GNOME Developer)
+Debugging is anticipated with distaste, performed with reluctance, and bragged about forever. -- Mads Villadsen
+"Science helps a lot, but people built perfectly good brick walls long before they knew why cement works." -- Alan Cox
+Never put off till run-time what you can do at compile-time. -- D. Gries
+"Don't bother using an over-simplified metaphor to prove me wrong. It means you don't understand my point." -- NanoG
+Only presidents, editors, and people with tapeworms have the right to use the editorial "we."
+"In a gold rush it's the people who sell the spades who make the money first"
+Those who dream by day are cognizant of many things which escape those who dream only by night. -- Edgar Allan Poe
+'The most incomprehensible thing about the world is that it is comprehensible.' -- Albert Einstein
+You have reached the pinnacle of success as soon as you become uninterested in money, compliments or publicity. -- Thomas Wolfe, The Sun, July 2005.
+We reject kings, presidents and voting. We believe in rough consensus and running code. -- Dave Clark
+A complex system that works is invariably found to have evolved from a simple system that worked'.A complex system designed from scratch never works and cannot be patched up to make it work. You have to start over, beginning with a working simple system. -- John Gall
+There is no future in which bits will be harder to copy than they are today ... Any business model that based on the idea that bits will be harder to copy is doomed. -- Cory Doctorow (2006 RedHat summit in Nashville)
+Analogy is a poor tool for reasoning, but a good analogy can be very effective in developing intuition. -- Barbara Simons and Jim Horning (Communications of the ACM, Sept 2005, Inside Risks)
+If we knew what it was we were doing, it would not be called research, would it? -- Albert Einstein
+If at first, the idea is not absurd, then there is no hope for it. -- Albert Einstein
+Judge a man by his questions, rather than his answers. -- Voltaire
+The enchanting charms of this sublime science reveal only to those who have the courage to go deeply into it. -- Carl Friedrich Gauss
