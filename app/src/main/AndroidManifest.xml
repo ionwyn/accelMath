@@ -12,15 +12,14 @@
         <activity android:name=".MenuActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".UnitListActivity" />
         <activity android:name=".ChapterActivity" />
         <activity android:name=".LessonActivity" />
-        <activity android:name=".QuestionActivity" />
         <activity android:name=".CompleteActivity" />
+        <activity android:name=".QuestionActivity" />
         <activity
             android:name=".QuoteActivity"
             android:label="@string/title_activity_quote"
