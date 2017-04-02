@@ -54,6 +54,16 @@ public class MenuActivity extends AppCompatActivity {
                         startActivity(intent);
                     }
                 });
+
+                mQuoteButton = (ImageButton) findViewById(R.id.quotes_button);
+                mQuoteButton.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                        Intent intent = new Intent(MenuActivity.this, QuoteActivity.class);
+                        startActivity(intent);
+                    }
+                });
             }
         }.start();
 
