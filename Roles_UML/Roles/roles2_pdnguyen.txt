@@ -1,0 +1,13 @@
+For this sprint, the role and work assignment/completion of each team member is as follow:
+Scrum master: (Jagrajan and Ionwyn) 
+-Set up group meetings and assign jobs to other team members.
+-Manage changes in project requirement so it would not interupt or conflict with the current workflow.
+Repo Manager: (Eric and me,Jason)
+-Eric was in charge of setting up the Gitlab repo and making some initial commit/push.
+-I helped out other teammates to get used to Gitlab workflow (basic steps and operations), resolve any merging conflicts and accept merge requests.
+I also prevent any error in commit/push/merge from breaking the build in master branch (code review)
+
+Team members: 
+Frontend Developers: Ionwyn designed UI and background image, app logo and added music/sound files with the help of.
+Backend Developers: Jagrajan did the logic part in Java and linked activities together.
+Database Manager: Eric and I took care of building the database for math topics/questions/answers with the help of Ionwyn.

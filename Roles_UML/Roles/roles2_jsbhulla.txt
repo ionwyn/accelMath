@@ -1,0 +1,20 @@
+Name: Jagrajan Bhullar
+SFU ID: jsbhulla
+
+In sprint 2, I was responsible for:
+
+Design:
+- Designed overall system architecture
+- Designed database
+	- Consulted group members and agreed upon using a JSON database
+	- Decided on using two databases (a static one for lessons and questions, 
+	  and a dynamic one for user progress
+- Design application flow, which included component and interface design
+	- How activities relayed information to each other
+	- Keeping track of question progress between various activities
+
+Coding:
+- Took responsibility of coding most of the java components
+- Did most of the coding in all activites and fragments
+- Created database handlers to convert json file to a java object
+- Created the base of most layout files (later enhanced by Ionwyn)

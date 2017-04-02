@@ -1,0 +1,24 @@
+1) Add the first name, last name and computing id of the member.
+
+Hsuan-Yi (Eric) Lin 
+hyl29
+301286674
+
+2) What was the assigned work (for example parts of database, User interface, parts of documentation)?
+
+	Back-End Development:
+		Designing the questions in latex form with Ionwyn + Phuong (Jason)
+	Documentation:
+		UML diagram
+	Repository Manager:
+		Creating directories that organizes our data, txt, and code files
+
+3) How much assigned work has been completed, integrated and delivered in the Sprint?
+	Finish the questions in latex and later enhanced by jason
+	Developed the uml file
+
+4) How much assigned work was not delivered?
+	Because the link provided by the project to the professor Brian fraser's website do not work, i had a hard time 
+	finishing up the UML file.
+
+	screenshot of the removed site: http://imgur.com/a/nxPJc
