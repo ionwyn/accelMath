@@ -91,7 +91,7 @@ public class ChapterFragment extends Fragment{
         public void bind (Database.Unit.Chapter chapter, int chapterIndex) {
             mChapter = chapter;
             mChapterIndex = chapterIndex;
-            mChapterNameTextView.setText(chapter.topic);
+            mChapterNameTextView.setText(mChapter.topic);
 
             mChapterRatingBar.setRating(0);
             float rating = ScoresHandler.get(getActivity()).getRating(mUnitIndex, mChapterIndex);
