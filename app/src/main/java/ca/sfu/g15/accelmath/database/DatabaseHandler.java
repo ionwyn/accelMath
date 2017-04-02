@@ -22,7 +22,8 @@ import ca.sfu.g15.accelmath.R;
 
 public class DatabaseHandler {
 
-    private static final String DB_PREFIX = "db";
+    public static final String DB_PREFIX = "db";
+
     private static final String DB_FILE_TYPE = "json";
     private static final String DEFAULT_DATABASE_FILE_NAME = DB_PREFIX + "AccelMathDefault.json";
 
@@ -84,6 +85,7 @@ public class DatabaseHandler {
 
     public boolean addDatabaseFromURL(Context context, String urlLocation) {
         try {
+            //Get JSON data from URL by using a AsyncTask to avoid running on the main thread
             return new RetrieveInternetJSONTask(context).execute(urlLocation).get();
         } catch (InterruptedException e) {
             e.printStackTrace();
@@ -100,6 +102,10 @@ public class DatabaseHandler {
             return file.delete();
         }
         return true;
+    }
+
+    public Database getDatabaseContents(Context context, String fileName) {
+        return getDatabaseFromFile(context, fileName);
     }
 
     private DatabaseHandler(Context context) {
