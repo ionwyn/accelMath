@@ -13,6 +13,7 @@ import android.widget.ImageButton;
 public class MenuActivity extends AppCompatActivity {
 
     private ImageButton mPlayButton;
+    private ImageButton mQuoteButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,12 +34,23 @@ public class MenuActivity extends AppCompatActivity {
             public void onFinish(){
 
                 MenuActivity.this.setContentView(R.layout.activity_menu);
+
                 mPlayButton = (ImageButton) findViewById(R.id.play_button);
                 mPlayButton.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
 
                         Intent intent = new Intent(MenuActivity.this, UnitListActivity.class);
+                        startActivity(intent);
+                    }
+                });
+
+                mQuoteButton = (ImageButton) findViewById(R.id.quotes_button);
+                mQuoteButton.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                        Intent intent = new Intent(MenuActivity.this, QuoteActivity.class);
                         startActivity(intent);
                     }
                 });

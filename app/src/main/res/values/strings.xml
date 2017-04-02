@@ -9,4 +9,6 @@
     <string name="finish">Finish &amp; Save Progress</string>
     <string name="you_scored">You scored</string>
     <string name="you_earned">You have earned</string>
+    <string name="title_activity_quote">QuoteActivity</string>
+    <string name="get_quote">More Quotes!</string>
 </resources>

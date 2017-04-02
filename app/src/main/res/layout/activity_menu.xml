@@ -22,6 +22,13 @@
             android:background="@null"
             android:src="@mipmap/button_play" />
 
+        <ImageButton
+            android:id="@+id/quotes_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@mipmap/button_quotes" />
+
     </LinearLayout>
 
 </LinearLayout>
