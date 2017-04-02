@@ -22,6 +22,7 @@
         <activity android:name=".LessonActivity"></activity>
         <activity android:name=".QuestionActivity"></activity>
         <activity android:name=".CompleteActivity"></activity>
+        <activity android:name=".SettingsActivity"></activity>
     </application>
 
 </manifest>
