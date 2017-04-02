@@ -34,10 +34,6 @@ public class QuoteActivity extends AppCompatActivity {
         setContentView(R.layout.activity_quote);
 
         mTextView = (TextView) findViewById(R.id.qotdview);
-		/*if(savedInstanceState != null) {
-			String savedText = savedInstanceState.getString(STATE_QOTD);
-			mTextView.setText(savedText);
-		}*/
 
         //Adds scrolling to the TextView
         mTextView.setMovementMethod(ScrollingMovementMethod.getInstance());
