@@ -16,4 +16,5 @@
     <string name="add">Add</string>
     <string name="select">Select</string>
     <string name="delete">Delete</string>
+    <string name="current_database">Current Database</string>
 </resources>

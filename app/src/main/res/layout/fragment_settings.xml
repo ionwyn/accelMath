@@ -12,7 +12,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:gravity="center_horizontal">
+            android:gravity="center_horizontal"
+            android:layout_margin="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/current_database"/>
 
             <TextView
                 android:id="@+id/current_database"
@@ -29,19 +35,17 @@
                 android:text="@string/url"/>
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/add_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/add"/>
 
-            <LinearLayout
-                android:id="@+id/database_container"
+            <android.support.v7.widget.RecyclerView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/database_recycler_view"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-            </LinearLayout>
+                android:layout_height="match_parent" />
 
         </LinearLayout>
     </ScrollView>

@@ -16,8 +16,8 @@ import ca.sfu.g15.accelmath.R;
 
 public class DatabaseHandler {
 
-    private static final String DEFAULT_DATABASE_FILE_NAME = "AccelMathDefault.json";
     private static final String DB_PREFIX = "db";
+    private static final String DEFAULT_DATABASE_FILE_NAME = DB_PREFIX + "AccelMathDefault.json";
 
     private static DatabaseHandler sDatabaseHandler;
 
