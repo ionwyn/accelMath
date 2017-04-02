@@ -25,7 +25,7 @@ public class MenuActivity extends AppCompatActivity {
         MediaPlayer mp = MediaPlayer.create(getApplicationContext(), R.raw.jingle);
         mp.start();
 
-        new CountDownTimer(5000,1000){
+        new CountDownTimer(1000,1000){
             @Override
             public void onTick(long millisUntilFinished){}
 
