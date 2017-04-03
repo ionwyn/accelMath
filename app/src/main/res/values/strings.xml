@@ -17,6 +17,8 @@
     <string name="select">Select</string>
     <string name="delete">Delete</string>
     <string name="current_database">Current Database</string>
+    <string name="add_database">Add Database</string>
+    <string name="available_databases">Available Databases</string>
     <string name="title_activity_quote">QuoteActivity</string>
     <string name="get_quote">More Quotes!</string>
     <string name="empty_quote">Empty Quote for now</string>

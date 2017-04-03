@@ -73,7 +73,6 @@ public class QuestionFragment extends Fragment implements View.OnClickListener {
         super.onCreate(savedInstanceState);
 
 
-
         mUnitIndex = getArguments().getInt(ARG_UNIT_INDEX);
         mChapterIndex = getArguments().getInt(ARG_CHAPTER_INDEX);
         mQuestionIndices = getArguments().getIntArray(ARG_QUESTION_INDICES);
@@ -100,10 +99,10 @@ public class QuestionFragment extends Fragment implements View.OnClickListener {
         //Set the MathView text to the current question
         mQuestionMathView = (MathView) view.findViewById(R.id.question_math_view);
         mQuestionMathView.config(
-                "MathJax.Hub.Config({\n"+
-                        "  CommonHTML: { linebreaks: { automatic: true } },\n"+
-                        "  \"HTML-CSS\": { linebreaks: { automatic: true } },\n"+
-                        "         SVG: { linebreaks: { automatic: true } }\n"+
+                "MathJax.Hub.Config({\n" +
+                        "  CommonHTML: { linebreaks: { automatic: true } },\n" +
+                        "  \"HTML-CSS\": { linebreaks: { automatic: true } },\n" +
+                        "         SVG: { linebreaks: { automatic: true } }\n" +
                         "});");
         mQuestionMathView.setText(mQuestion.question);
 

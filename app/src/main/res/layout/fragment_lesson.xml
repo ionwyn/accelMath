@@ -3,18 +3,19 @@
               xmlns:auto="http://schemas.android.com/apk/res-auto"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
-              android:layout_margin="16dp"
               android:gravity="center_horizontal"
               android:orientation="vertical">
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/transparent_white">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
 
             <TextView
                 android:id="@+id/lesson_name_text_view"
@@ -35,12 +36,16 @@
             </io.github.kexanie.library.MathView>
             <Button
                 android:id="@+id/start_quiz_button"
+                android:layout_margin="16dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/start_quiz"
                 android:gravity="center"
                 android:layout_centerInParent="true"
                 android:layout_gravity="center"
+                android:padding="8dp"
+                android:background="@color/color_green_button"
+                android:drawableRight="@drawable/ic_send_black_24dp"
                 android:alpha="0.75" />
         </LinearLayout>
     </ScrollView>

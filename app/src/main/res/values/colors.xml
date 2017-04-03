@@ -4,5 +4,9 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="color_green_button">#83ea8e</color>
+    <color name="color_red_button">#fd8c8c</color>
+    <color name="color_blue_button">#8cc6fd</color>
+    <color name="main_button_color">#fae3cb</color>
     <color name="white">#FFFFFF</color>
+    <color name="transparent_white">#c8ffffff</color>
 </resources>
