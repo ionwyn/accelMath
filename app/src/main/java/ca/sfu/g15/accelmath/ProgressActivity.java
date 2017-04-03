@@ -6,7 +6,7 @@ public class ProgressActivity extends SingleFragmentActivity{
 
     @Override
     protected Fragment createFragment() {
-        return null;
+        return new ProgressFragment();
     }
 
 }

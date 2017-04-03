@@ -25,6 +25,7 @@
         <activity android:name=".QuestionActivity"></activity>
         <activity android:name=".CompleteActivity"></activity>
         <activity android:name=".SettingsActivity"></activity>
+        <activity android:name=".ProgressActivity"></activity>
         <activity
             android:name=".QuoteActivity"
             android:label="@string/title_activity_quote"

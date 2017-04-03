@@ -54,6 +54,12 @@ public class ScoresHandler {
         return getScoresFromFile(context, fileName);
     }
 
+    public String derviveDatabaseFileName(String databaseFileName) {
+        databaseFileName = databaseFileName.substring(DatabaseHandler.DB_PREFIX.length());
+        return SCORES_PREFIX + databaseFileName;
+
+    }
+
     private void refreshCurrentScores(Context context) {
         String latestFile = getCurrentFileName(context);
         if (!latestFile.equals(mCurrentFileName)) {
@@ -111,7 +117,6 @@ public class ScoresHandler {
     private String getCurrentFileName(Context context) {
         String fileName = DatabaseHandler.get(context).getCurrentFile();
         //Replace database prefix with scores prefix
-        fileName = fileName.substring(DatabaseHandler.DB_PREFIX.length());
-        return SCORES_PREFIX + fileName;
+        return derviveDatabaseFileName(fileName);
     }
 }

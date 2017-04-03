@@ -30,6 +30,13 @@ public class MainMenuFragment extends Fragment{
         });
 
         mProgressButton = (Button) v.findViewById(R.id.progress_button);
+        mProgressButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), ProgressActivity.class);
+                startActivity(intent);
+            }
+        });
 
         mSettingsButton = (Button) v.findViewById(R.id.settings_button);
         mSettingsButton.setOnClickListener(new View.OnClickListener() {

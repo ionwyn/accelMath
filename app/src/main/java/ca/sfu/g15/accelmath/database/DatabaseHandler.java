@@ -74,8 +74,9 @@ public class DatabaseHandler {
             //If the file is a database file, add it to the list
             if (fileName.startsWith(DB_PREFIX) && fileName.endsWith(DB_FILE_TYPE)) {
                 Database database = getDatabaseFromFile(context, fileName);
+                String scoresFileName = ScoresHandler.get(context).derviveDatabaseFileName(fileName);
                 if (database != null) {
-                    databases.add(new DatabaseMetaData(database.edition, fileName));
+                    databases.add(new DatabaseMetaData(database.edition, fileName, scoresFileName));
                 }
             }
         }
