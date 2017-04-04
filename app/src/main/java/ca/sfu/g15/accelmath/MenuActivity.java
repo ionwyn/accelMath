@@ -9,6 +9,7 @@ import android.view.Window;
 import android.widget.Button;
 import android.os.CountDownTimer;
 import android.widget.ImageButton;
+import android.os.Handler;
 
 public class MenuActivity extends AppCompatActivity {
 
@@ -33,6 +34,7 @@ public class MenuActivity extends AppCompatActivity {
             @Override
             public void onFinish(){
 
+
                 MenuActivity.this.setContentView(R.layout.activity_menu);
 
                 mPlayButton = (ImageButton) findViewById(R.id.play_button);
@@ -45,25 +47,6 @@ public class MenuActivity extends AppCompatActivity {
                     }
                 });
 
-                mQuoteButton = (ImageButton) findViewById(R.id.quotes_button);
-                mQuoteButton.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-
-                        Intent intent = new Intent(MenuActivity.this, QuoteActivity.class);
-                        startActivity(intent);
-                    }
-                });
-
-                mQuoteButton = (ImageButton) findViewById(R.id.quotes_button);
-                mQuoteButton.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-
-                        Intent intent = new Intent(MenuActivity.this, QuoteActivity.class);
-                        startActivity(intent);
-                    }
-                });
             }
         }.start();
 
