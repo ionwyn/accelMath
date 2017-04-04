@@ -3,6 +3,7 @@ package ca.sfu.group15.accelmath;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -145,7 +146,7 @@ public class QuestionFragment extends Fragment implements View.OnClickListener {
         int index = mCurrentQuestionIndex + 1;
         int score = correct ? mPointsScored + 1 : mPointsScored;
 
-        Intent intent;
+        final Intent intent;
         if (index < mQuestionIndices.length) {
             intent = QuestionActivity.newIntent(getActivity(), mUnitIndex, mChapterIndex,
                     mQuestionIndices, index, score);
@@ -153,7 +154,15 @@ public class QuestionFragment extends Fragment implements View.OnClickListener {
             intent = CompleteActivity.newIntent(getActivity(), mUnitIndex, mChapterIndex,
                     score, mQuestionIndices.length);
         }
-        startActivity(intent);
-        getActivity().finish();
+
+        new Handler().postDelayed(new Runnable() {
+            public void run() {
+
+                startActivity(intent);
+                getActivity().finish();
+
+                getActivity().overridePendingTransition(R.anim.slide_in,R.anim.slide_out);
+            }
+        }, 100);
     }
 }

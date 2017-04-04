@@ -27,9 +27,13 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:enabled="false"
-            android:textColor="#00f"
+            android:textColor="@android:color/background_dark"
             android:textSize="22sp"
-            android:freezesText="true"/>
+            android:freezesText="true"
+            android:textStyle="italic"
+            android:textAlignment="center"
+            android:fontFamily="serif"
+            android:lineSpacingExtra="8sp" />
     </ScrollView>
 
     <Button
