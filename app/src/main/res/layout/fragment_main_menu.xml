@@ -37,4 +37,15 @@
         android:background="@color/main_button_color"
         android:width="@dimen/main_button_width"
         android:text="@string/settings"/>
+
+    <Button
+        android:id="@+id/quotes_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_margin="8dp"
+        android:drawableRight="@drawable/ic_quote"
+        android:background="@color/main_button_color"
+        android:width="@dimen/main_button_width"
+        android:text="@string/quotes"/>
 </LinearLayout>

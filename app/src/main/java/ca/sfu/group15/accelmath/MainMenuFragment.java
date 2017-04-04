@@ -8,12 +8,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.os.Handler;
 
 public class MainMenuFragment extends Fragment{
 
     private Button mStartButton;
     private Button mProgressButton;
     private Button mSettingsButton;
+    private Button mQuotesButton;
 
     @Nullable
     @Override
@@ -24,8 +26,17 @@ public class MainMenuFragment extends Fragment{
         mStartButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), UnitListActivity.class);
-                startActivity(intent);
+                new Handler().postDelayed(new Runnable() {
+                    public void run() {
+                        Intent mainIntent = new Intent(getActivity(),
+                                UnitListActivity.class);
+                        mainIntent.putExtra("id", "1");
+                        startActivity(mainIntent);
+//                        getActivity().finish();
+
+                        getActivity().overridePendingTransition(R.anim.slide_in,R.anim.slide_out);
+                    }
+                }, 100);
             }
         });
 
@@ -33,8 +44,17 @@ public class MainMenuFragment extends Fragment{
         mProgressButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), ProgressActivity.class);
-                startActivity(intent);
+                new Handler().postDelayed(new Runnable() {
+                    public void run() {
+                        Intent mainIntent = new Intent(getActivity(),
+                                ProgressActivity.class);
+                        mainIntent.putExtra("id", "1");
+                        startActivity(mainIntent);
+//                        getActivity().finish();
+
+                        getActivity().overridePendingTransition(R.anim.slide_in,R.anim.slide_out);
+                    }
+                }, 100);
             }
         });
 
@@ -42,8 +62,35 @@ public class MainMenuFragment extends Fragment{
         mSettingsButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), SettingsActivity.class);
-                startActivity(intent);
+                new Handler().postDelayed(new Runnable() {
+                    public void run() {
+                        Intent mainIntent = new Intent(getActivity(),
+                                SettingsActivity.class);
+                        mainIntent.putExtra("id", "1");
+                        startActivity(mainIntent);
+//                        getActivity().finish();
+
+                        getActivity().overridePendingTransition(R.anim.slide_in,R.anim.slide_out);
+                    }
+                }, 100);
+            }
+        });
+
+        mQuotesButton = (Button) v.findViewById(R.id.quotes_button);
+        mQuotesButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                new Handler().postDelayed(new Runnable() {
+                    public void run() {
+                        Intent mainIntent = new Intent(getActivity(),
+                                QuoteActivity.class);
+                        mainIntent.putExtra("id", "1");
+                        startActivity(mainIntent);
+//                        getActivity().finish();
+
+                        getActivity().overridePendingTransition(R.anim.slide_in,R.anim.slide_out);
+                    }
+                }, 100);
             }
         });
 
