@@ -1,35 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="ca.sfu.group15.accelmath">
+    package="ca.sfu.group15.accelmath">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
+        android:background="@mipmap/he"
         android:icon="@mipmap/accelmath_logo"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"
-        android:background="@mipmap/he">
-        <activity android:name="ca.sfu.group15.accelmath.MenuActivity">
+        android:theme="@style/AppTheme">
+        <activity android:name=".MenuActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="ca.sfu.group15.accelmath.MainMenuActivity"></activity>
-        <activity android:name="ca.sfu.group15.accelmath.UnitListActivity"></activity>
-        <activity android:name="ca.sfu.group15.accelmath.ChapterActivity"></activity>
-        <activity android:name="ca.sfu.group15.accelmath.LessonActivity"></activity>
-        <activity android:name="ca.sfu.group15.accelmath.QuestionActivity"></activity>
-        <activity android:name="ca.sfu.group15.accelmath.CompleteActivity"></activity>
-        <activity android:name="ca.sfu.group15.accelmath.SettingsActivity"></activity>
-        <activity android:name="ca.sfu.group15.accelmath.ProgressActivity"></activity>
+        <activity android:name=".MainMenuActivity" />
+        <activity android:name=".UnitListActivity" />
+        <activity android:name=".ChapterActivity" />
+        <activity android:name=".LessonActivity" />
+        <activity android:name=".QuestionActivity" />
+        <activity android:name=".CompleteActivity" />
+        <activity android:name=".SettingsActivity" />
+        <activity android:name=".ProgressActivity" />
         <activity
-            android:name="ca.sfu.group15.accelmath.QuoteActivity"
+            android:name=".QuoteActivity"
             android:label="@string/title_activity_quote"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".AboutActivity"></activity>
     </application>
 
 </manifest>
