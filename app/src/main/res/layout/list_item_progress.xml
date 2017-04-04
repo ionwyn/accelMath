@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:gravity="center"
     android:background="@color/transparent_white"
-    tools:context="ca.sfu.g15.accelmath.ProgressActivity">
+    tools:context="ca.sfu.group15.accelmath.ProgressActivity">
 
 
     <ProgressBar

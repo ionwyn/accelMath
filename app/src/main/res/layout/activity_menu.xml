@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context="ca.sfu.g15.accelmath.MenuActivity">
+    tools:context="ca.sfu.group15.accelmath.MenuActivity">
 
     <LinearLayout
         android:layout_width="wrap_content"

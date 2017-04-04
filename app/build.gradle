@@ -5,7 +5,7 @@ android {
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
     defaultConfig {
-        applicationId "ca.sfu.g15.accelmath"
+        applicationId "ca.sfu.group15.accelmath"
         minSdkVersion 19
         targetSdkVersion 25
         versionCode 1
