@@ -16,6 +16,7 @@ public class MainMenuFragment extends Fragment{
     private Button mProgressButton;
     private Button mSettingsButton;
     private Button mQuotesButton;
+    private Button mAboutButton;
 
     @Nullable
     @Override
@@ -84,6 +85,24 @@ public class MainMenuFragment extends Fragment{
                     public void run() {
                         Intent mainIntent = new Intent(getActivity(),
                                 QuoteActivity.class);
+                        mainIntent.putExtra("id", "1");
+                        startActivity(mainIntent);
+//                        getActivity().finish();
+
+                        getActivity().overridePendingTransition(R.anim.slide_in,R.anim.slide_out);
+                    }
+                }, 100);
+            }
+        });
+
+        mAboutButton = (Button) v.findViewById(R.id.about_button);
+        mAboutButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                new Handler().postDelayed(new Runnable() {
+                    public void run() {
+                        Intent mainIntent = new Intent(getActivity(),
+                                AboutActivity.class);
                         mainIntent.putExtra("id", "1");
                         startActivity(mainIntent);
 //                        getActivity().finish();

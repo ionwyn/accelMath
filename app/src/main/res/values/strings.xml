@@ -23,5 +23,6 @@
     <string name="get_quote">More Quotes!</string>
     <string name="empty_quote">Empty Quote for now</string>
     <string name="quotes">QUOTES</string>
+    <string name="about">ABOUT</string>
     <string name="reset">Reset</string>
 </resources>
