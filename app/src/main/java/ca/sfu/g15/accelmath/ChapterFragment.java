@@ -18,7 +18,7 @@ import ca.sfu.g15.accelmath.database.Database;
 import ca.sfu.g15.accelmath.database.DatabaseHandler;
 import ca.sfu.g15.accelmath.database.ScoresHandler;
 
-public class ChapterFragment extends Fragment{
+public class ChapterFragment extends Fragment {
 
     private static final String ARG_UNIT_INDEX = "unit_index";
 
@@ -88,13 +88,13 @@ public class ChapterFragment extends Fragment{
             mChapterRatingBar = (RatingBar) itemView.findViewById(R.id.chapter_stars);
         }
 
-        public void bind (Database.Unit.Chapter chapter, int chapterIndex) {
+        public void bind(Database.Unit.Chapter chapter, int chapterIndex) {
             mChapter = chapter;
             mChapterIndex = chapterIndex;
             mChapterNameTextView.setText(mChapter.topic);
 
             mChapterRatingBar.setRating(0);
-            float rating = ScoresHandler.get(getActivity()).getRating(mUnitIndex, mChapterIndex);
+            float rating = ScoresHandler.get(getActivity()).getRating(getActivity(), mUnitIndex, mChapterIndex);
             if (rating > 0) {
                 mChapterRatingBar.setRating(rating);
             }

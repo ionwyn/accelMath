@@ -13,12 +13,12 @@ import java.util.ArrayList;
 
 public class ScoresHandler {
 
-    private static String FILE_NAME = "scores.json";
     private static final String SCORES_PREFIX = "scores";
 
     private static ScoresHandler sScoresHandler;
 
     private Scores mScores;
+    private String mCurrentFileName;
 
     public static ScoresHandler get(Context context) {
         if (sScoresHandler == null) {
@@ -27,7 +27,9 @@ public class ScoresHandler {
         return sScoresHandler;
     }
 
-    public void setRating (Context context, int unitIndex, int chapterIndex, float rating) {
+    public void setRating(Context context, int unitIndex, int chapterIndex, float rating) {
+        refreshCurrentScores(context);
+
         Scores.Score score = getScore(unitIndex, chapterIndex);
         if (score != null && score.rating < rating) {
             score.rating = rating;
@@ -41,13 +43,27 @@ public class ScoresHandler {
         updateScoresInFile(context);
     }
 
-    public float getRating (int unitIndex, int chapterIndex) {
+    public float getRating(Context context, int unitIndex, int chapterIndex) {
+        refreshCurrentScores(context);
+
         Scores.Score score = getScore(unitIndex, chapterIndex);
         return score != null ? score.rating : -1f;
     }
 
+    public Scores getScoresContents(Context context, String fileName) {
+        return getScoresFromFile(context, fileName);
+    }
+
+    private void refreshCurrentScores(Context context) {
+        String latestFile = getCurrentFileName(context);
+        if (!latestFile.equals(mCurrentFileName)) {
+            mScores = getScoresFromFile(context);
+            mCurrentFileName = latestFile;
+        }
+    }
+
     private Scores.Score getScore(int unitIndex, int chapterIndex) {
-        for (Scores.Score score: mScores.scores) {
+        for (Scores.Score score : mScores.scores) {
             if (score.unitIndex == unitIndex && score.chapterIndex == chapterIndex) {
                 return score;
             }
@@ -55,12 +71,16 @@ public class ScoresHandler {
         return null;
     }
 
-    private ScoresHandler (Context context) {
+    private ScoresHandler(Context context) {
         mScores = getScoresFromFile(context);
     }
 
-    private Scores getScoresFromFile (Context context) {
-        File file = new File(context.getFilesDir(), getCurrentFileName(context));
+    private Scores getScoresFromFile(Context context) {
+        return getScoresFromFile(context, getCurrentFileName(context));
+    }
+
+    private Scores getScoresFromFile(Context context, String fileName) {
+        File file = new File(context.getFilesDir(), fileName);
         if (file.exists()) {
             try {
                 FileInputStream inputStream = context.openFileInput(file.getName());
@@ -76,7 +96,7 @@ public class ScoresHandler {
         return scores;
     }
 
-    private void updateScoresInFile (Context context) {
+    private void updateScoresInFile(Context context) {
         File file = new File(context.getFilesDir(), getCurrentFileName(context));
         FileOutputStream outputStream;
         try {
@@ -89,6 +109,9 @@ public class ScoresHandler {
     }
 
     private String getCurrentFileName(Context context) {
-        return SCORES_PREFIX + DatabaseHandler.get(context).getCurrentFile();
+        String fileName = DatabaseHandler.get(context).getCurrentFile();
+        //Replace database prefix with scores prefix
+        fileName = fileName.substring(DatabaseHandler.DB_PREFIX.length());
+        return SCORES_PREFIX + fileName;
     }
 }
