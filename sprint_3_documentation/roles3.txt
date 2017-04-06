@@ -1,0 +1,13 @@
+For this sprint, the role of each team member is as following:
+
+- Jagrajan -
+Worked on database handler and creating progress and settings activity. Also made database editor web app. 
+
+- Ionwyn - 
+Worked on UI styling, graphics, thawed out bugs, and added transitions.
+
+- Jason -
+Alongside Eric, did almost all the documentation. Made the presentation.
+
+- Eric - 
+Alongside Eric, did almost all the documentation. Made the presentation.
