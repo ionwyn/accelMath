@@ -1,6 +1,7 @@
 package ca.sfu.group15.accelmath;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -17,6 +18,7 @@ public class MainMenuFragment extends Fragment{
     private Button mSettingsButton;
     private Button mQuotesButton;
     private Button mAboutButton;
+    private Button mCreateButton;
 
     @Nullable
     @Override
@@ -110,6 +112,16 @@ public class MainMenuFragment extends Fragment{
                         getActivity().overridePendingTransition(R.anim.slide_in,R.anim.slide_out);
                     }
                 }, 100);
+            }
+        });
+
+        mCreateButton = (Button) v.findViewById(R.id.create_button);
+        mCreateButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Uri uri = Uri.parse("http://jagrajan.com/accelmath/");
+                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(intent);
             }
         });
 

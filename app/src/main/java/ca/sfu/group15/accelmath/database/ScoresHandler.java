@@ -60,6 +60,13 @@ public class ScoresHandler {
 
     }
 
+    public boolean deleteFile(Context context, String scoresFile) {
+        File file = new File(context.getFilesDir(), scoresFile);
+        boolean result = file.delete();
+        mScores = getScoresFromFile(context);
+        return result;
+    }
+
     private void refreshCurrentScores(Context context) {
         String latestFile = getCurrentFileName(context);
         if (!latestFile.equals(mCurrentFileName)) {

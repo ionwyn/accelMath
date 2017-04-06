@@ -70,6 +70,16 @@ public class ProgressFragment extends Fragment {
             mTopProgressBar = (ProgressBar) itemView.findViewById(R.id.top_progress_bar);
             mBottomProgressBar = (ProgressBar) itemView.findViewById(R.id.bottom_progress_bar);
             mResetButton = (Button) itemView.findViewById(R.id.reset_button);
+            mResetButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if (ScoresHandler.get(getActivity()).deleteFile(getActivity(), mScoresFileName)) {
+                        getActivity().finish();
+                        startActivity(getActivity().getIntent());
+                    }
+                }
+            });
+
             mNameTextView = (TextView) itemView.findViewById(R.id.name_text_view);
             mProgressTextView = (TextView) itemView.findViewById(R.id.progress_text_view);
         }
