@@ -40,7 +40,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 * **Jagrajan Bhullar** - *The Database guy* [GitHub](https://github.com/jagrajan)
 * **Eric Lin** - *The Designer*
 * **Nguyen Duc Phuong** - *The typesetter* - [GitHub](https://github.com/hyl29)
-* * **Ionwyn Sean** - *The Math guy* - [Works Worth Wording](https://www.ionwyn.com)
+* **Ionwyn Sean** - *The Math guy* - [Works Worth Wording](https://www.ionwyn.com)
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
